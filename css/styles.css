@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Questrial&display=swap');
+
+:root {
+    --cor-roxo: #969BFF; 
+    --cor-branco: #FFFFFF; 
+    --grad-linear-horizontal: linear-gradient(to right, #3339A4, #131314);
+    --grad-linear-vertical: linear-gradient(to up, #3339A4, #131314); 
+    --grad-radial: radial-gradient(#16293D, #0B151F, #000000);
+}
+
+body {
+    background: var(--grad-radial);
+}
