@@ -2,12 +2,39 @@
 
 :root {
     --cor-roxo: #969BFF; 
+    --cor-verde: #A2FF96;
     --cor-branco: #FFFFFF; 
-    --grad-linear-horizontal: linear-gradient(to right, #3339A4, #131314);
-    --grad-linear-vertical: linear-gradient(to up, #3339A4, #131314); 
-    --grad-radial: radial-gradient(#16293D, #0B151F, #000000);
+    --grad-linear-horizontal-roxo: linear-gradient(to right, #3339A4, #131314);
+    --grad-linear-vertical-roxo: linear-gradient(to up, #3339A4, #131314); 
+    --grad-radial-roxo: radial-gradient(#16293D, #0B151F, #000000);
+    --grad-linear-vertical-verde: linear-gradient(to up, #4C7D35, #131314);
 }
 
 body {
-    background: var(--grad-radial);
+    background: var(--grad-radial-roxo);
+}
+
+.pagina__titulo {
+    font-family: "Quantico", sans-serif;
+    font-size: 3rem; 
+    font-weight: bold;
+    color: var(--cor-branco)
+
+}
+
+.pagina__titulo--destaque {
+    color: var(--cor-roxo)
+}
+
+.pagina__texto {
+    font-family: "Questrial", sans-serif; 
+    font-size: 1rem;
+    color: var(--cor-branco)
+}
+
+.pagina__subtitulo {
+    font-family: "Quantico", sans-serif; 
+    font-size: 2.1rem; 
+    font-weight: bold;
+    color: var(--cor-branco)
 }
