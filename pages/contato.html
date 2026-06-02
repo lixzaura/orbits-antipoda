@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
 </head>
+
 <body>
+
     <header class="header">
         <img src="/assets/logo_orbits.png" alt="Logo Orbits" class="header__logo">
+
         <nav class="header__menu">
             <a href="/pages/index.html" class="header__menu__link">Início</a>
             <a href="/pages/sobre.html" class="header__menu__link">Sobre</a>
@@ -19,58 +22,79 @@
         </nav>
     </header>
 
-    <main>
-      <h1>Faça parte do ecossistema.</h1>
-      <p>Conecte-se conosco na construção de uma economia espacial mais transparente, colaborativa e sustentável.</p>
-      <section>
-        <div>
-            <form action="">
+    <main class="contato">
 
-                <div>
-                    <label for="name">Nome</label>
-                    <input 
-                        type="text"
-                        id="name"
-                        placeholder="digite o seu nome"
+        <h1 class="pagina__titulo">Faça parte do ecossistema.</h1>
+
+        <p class="pagina__texto">
+            Conecte-se conosco na construção de uma economia espacial mais transparente, colaborativa e sustentável.
+        </p>
+
+        <section class="contato__secao">
+            <div class="contato__area">
+
+                <form action="" class="contato__formulario">
+
+                    <div class="contato__formulario__campo">
+                        <label for="name" class="contato__formulario__label">Nome</label>
+                        <input 
+                            type="text"
+                            id="name"
+                            name="name"
+                            class="contato__formulario__input"
+                            placeholder="Digite o seu nome"
+                            required
                         >
-                </div>
+                    </div>
 
-                <div>
-                    <label for="mail">E-mail</label>
-                    <input 
-                        type="email"
-                        id="mail"
-                        placeholder="digite o seu e-mail"
+                    <div class="contato__formulario__campo">
+                        <label for="mail" class="contato__formulario__label">E-mail</label>
+                        <input 
+                            type="email"
+                            id="mail"
+                            name="mail"
+                            class="contato__formulario__input"
+                            placeholder="Digite o seu e-mail"
+                            required
                         >
-                </div>
+                    </div>
 
-                <div>
-                    <label for="number">Telefone</label>
-                    <input 
-                        type="number"
-                        id="number"
-                        placeholder="digite o seu telefone"
+                    <div class="contato__formulario__campo">
+                        <label for="phone" class="contato__formulario__label">Telefone</label>
+                        <input 
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            class="contato__formulario__input"
+                            placeholder="Digite o seu telefone"
+                            required
                         >
-                </div>
+                    </div>
 
-                <div>
-                    <label for="message">Mensagem</label>
-                    <textarea 
-                        id="message"
-                        placeholder="digite a sua mensagem"
-                        >
-                        </textarea>
-                </div>
-                <button type="submit">Enviar</button>
+                    <div class="contato__formulario__campo">
+                        <label for="message" class="contato__formulario__label">Mensagem</label>
+                        <textarea 
+                            id="message"
+                            name="message"
+                            class="contato__formulario__textarea"
+                            placeholder="Digite a sua mensagem"
+                            required
+                        ></textarea>
+                    </div>
 
-            </form>
-            <p>Status:</p>
-        </div>
-      </section>
+                    <button type="submit" class="contato__formulario__botao">Enviar</button>
+
+                </form>
+
+                <p class="contato__status">Status:</p>
+
+            </div>
+        </section>
 
     </main>
 
     <footer class="footer">
+
         <nav class="footer__menu">
             <a href="/pages/index.html" class="footer__menu__link">Início</a>
             <a href="/pages/sobre.html" class="footer__menu__link">Sobre</a>
@@ -80,7 +104,9 @@
             <a href="/pages/faq.html" class="footer__menu__link">FAQ</a>
             <a href="/pages/contato.html" class="footer__menu__link">Contato</a>
         </nav>
+
         <p class="footer__texto">© 2026 Antípoda. Todos os direitos reservados.</p>
+
     </footer>
     
 </body>
