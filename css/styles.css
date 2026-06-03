@@ -12,6 +12,8 @@
     --cor-roxo: #969BFF; 
     --cor-verde: #A2FF96;
     --cor-branco: #FFFFFF; 
+    --cor-preto: #06060d;
+    --cor-transparente: #9499ff67;
     --grad-linear-horizontal-roxo: linear-gradient(to right, #3339A436, #13131436);
     --grad-linear-vertical-roxo: linear-gradient(to top, #3339A436, #13131436); 
     --grad-radial-roxo: radial-gradient(#16293D, #0B151F, #000000);
@@ -248,4 +250,126 @@ body {
     font-family: "Quantico", sans-serif;
     color: var(--cor-branco);
     font-size: 1rem;
+}
+
+/* Score */
+
+.score__apresentacao__imagem {
+    width: 18rem;
+}
+
+.score__tipos__reputacao {
+    width: 27rem;
+}
+
+.score__tipos__reputacao__texto,
+.score__tipos__sustentabilidade__texto {
+    font-family: "Questrial", sans-serif;
+    font-size: 1rem;
+    color: var(--cor-branco);
+}
+
+.score__tipos__reputacao__conteudo__caixa {
+    width: 5rem;
+}
+
+.score__tipos__reputacao__conteudo__caixa__imagem,
+.score__tipos__sustentabilidade__conteudo__caixa__imagem
+{
+    width: 3.5rem;
+}
+
+.score__tipos__reputacao__conteudo__caixa__titulo,
+.score__tipos__sustentabilidade__conteudo__caixa__titulo {
+    font-family: "Quantico", sans-serif;
+    font-size: 0.6rem;
+    color: var(--cor-branco);
+}
+
+.score__tipos__reputacao__conteudo__caixa__texto,
+.score__tipos__sustentabilidade__conteudo__caixa__texto {
+    font-family: "Questrial", sans-serif;
+    font-size: 0.5rem;
+    color: var(--cor-branco);
+}
+
+.score__tipos__sustentabilidade__conteudo__caixa {
+    border: 0.15rem solid var(--cor-verde);
+    background: var(--grad-linear-vertical-verde);
+    border-radius: 0.6rem;
+    width: 5rem;
+}
+
+.score__tipos__sustentabilidade {
+    border: 0.15rem solid var(--cor-verde);
+    background: var(--grad-linear-vertical-verde);
+    border-radius: 0.6rem;
+    width: 27rem;
+}
+
+.sustentabilidade__destaque {
+    color: var(--cor-verde);
+}
+
+/* Tabela Score - Desktop first */
+
+.score__ranking__tabela {
+    border-collapse: collapse;
+    width: 80rem;
+}
+
+.score__ranking__tabela__head {
+    background-color: var(--cor-preto);
+    border-top: 0.15rem solid var(--cor-roxo);
+    border-bottom: 0.15rem solid var(--cor-roxo);
+}
+
+.score__ranking__tabela__body__linha {
+    border-top: 0.15rem solid var(--cor-transparente);
+}
+
+.score__ranking__tabela__head__linha__item {
+    font-family: "Quantico", sans-serif;
+    color: var(--cor-branco);
+    font-size: 2.25rem;
+}
+
+.score__ranking__tabela__body__posicao.pagina__titulo--destaque {
+    color: var(--cor-roxo);
+}
+
+.score__ranking__tabela__body__posicao {
+    font-family: "Quantico", sans-serif;
+    font-size: 4rem;
+    color: var(--cor-branco);
+    font-weight: bold;
+}
+
+.score__ranking__tabela__body__empresa {    
+    color: var(--cor-branco);
+}
+
+.score__ranking__tabela__body__empresa__logo {
+    width: 3.4rem;
+}
+
+.score__ranking__tabela__body__reputacao,
+.score__ranking__tabela__body__sustentabilidade,
+.score__ranking__tabela__body__status,
+.score__ranking__tabela__body__empresa 
+{
+    font-size: 2rem;
+    font-family: "Questrial", sans-serif;
+}
+
+.score__ranking__tabela__body__reputacao {
+    color: var(--cor-roxo);
+}
+
+.score__ranking__tabela__body__sustentabilidade {
+    color: var(--cor-verde);
+}
+
+.score__ranking__tabela__body__status {
+    color: var(--cor-branco);
 }

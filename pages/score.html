@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
     <title>Score</title>
 </head>
 <body>
@@ -22,7 +23,7 @@
     <main class="score">
         <section class="score__apresentacao">
             <div class="score__apresentacao__conteudo">
-                <h1 class="pagina__titulo">Dois indicadores, um mesmo objetivo.</h1>
+                <h1 class="pagina__titulo">Dois indicadores, <strong class="pagina__titulo--destaque">um mesmo objetivo.</strong></h1>
                 <p class="pagina__texto">O espaço pertence a todos. E as decisões tomadas em órbita têm impacto global. Em uma economia espacial cada vez mais complexa, uma infraestrutura de confiança torna-se necessária.</p>
                 <p class="pagina__texto">Por isso, a Orbits, através do cruzamento de dados públicos, registros espaciais e parâmetros operacionais, cria uma camada de inteligência capaz de transformar confiança em uma informação mensurável dentro do ecossistema espacial.</p>
             </div>
@@ -64,31 +65,31 @@
                 </div>
             </div>
             
-            <div class="score__tipos__sustentabilidade caixa--degrade">
-                <h2 class="pagina__subtitulo">Score de <strong class="pagina__titulo--destaque">Sustentabilidade</strong></h2>
+            <div class="score__tipos__sustentabilidade">
+                <h2 class="pagina__subtitulo">Score de <strong class="sustentabilidade__destaque">Sustentabilidade</strong></h2>
                 <p class="score__tipos__sustentabilidade__texto">O Score de Sustentabilidade é um indicador de responsabilidade que permite avaliar como cada agente contribui para a sustentabilidade espacial.</p>
                 <p class="score__tipos__sustentabilidade__texto">A pontuação é baseada em:</p>
 
                 <div class="score__tipos__sustentabilidade__conteudo">
-                    <div class="score__tipos__sustentabilidade__conteudo__caixa caixa--degrade">
+                    <div class="score__tipos__sustentabilidade__conteudo__caixa">
                         <img src="/assets/score_sus_1.png" alt="Pictograma Sustentabilidade 1" class="score__tipos__sustentabilidade__conteudo__caixa__imagem">
                         <h3 class="score__tipos__sustentabilidade__conteudo__caixa__titulo">Lixo Espacial</h3>
                         <p class="score__tipos__sustentabilidade__conteudo__caixa__texto">Controle da geração e gerenciamento de resíduos.</p>
                     </div>
 
-                    <div class="score__tipos__sustentabilidade__conteudo__caixa caixa--degrade">
+                    <div class="score__tipos__sustentabilidade__conteudo__caixa">
                         <img src="/assets/score_sus_2.png" alt="Pictograma Sustentabilidade 2" class="score__tipos__sustentabilidade__conteudo__caixa__imagem">
                         <h3 class="score__tipos__sustentabilidade__conteudo__caixa__titulo">Ocupação Orbital</h3>
                         <p class="score__tipos__sustentabilidade__conteudo__caixa__texto">Utilização responsável de órbitas e recursos espaciais.</p>
                     </div>
 
-                    <div class="score__tipos__sustentabilidade__conteudo__caixa caixa--degrade">
+                    <div class="score__tipos__sustentabilidade__conteudo__caixa">
                         <img src="/assets/score_sus_3.png" alt="Pictograma Sustentabilidade 3" class="score__tipos__sustentabilidade__conteudo__caixa__imagem">
                         <h3 class="score__tipos__sustentabilidade__conteudo__caixa__titulo">Ciclo de Vida</h3>
                         <p class="score__tipos__sustentabilidade__conteudo__caixa__texto">Planejamento operacional e retirada de ativos orbitais.</p>
                     </div>
 
-                    <div class="score__tipos__sustentabilidade__conteudo__caixa caixa--degrade">
+                    <div class="score__tipos__sustentabilidade__conteudo__caixa">
                         <img src="/assets/score_sus_4.png" alt="Pictograma Sustentabilidade 4" class="score__tipos__sustentabilidade__conteudo__caixa__imagem">
                         <h3 class="score__tipos__sustentabilidade__conteudo__caixa__titulo">Conformidade</h3>
                         <p class="score__tipos__sustentabilidade__conteudo__caixa__texto">Aderência a normas e diretrizes de sustentabilidade espacial.</p>
@@ -99,20 +100,20 @@
 
         <section class="score__ranking">
             <h2 class="pagina__subtitulo">Ranking de Empresas</h2>
-            <table class="score__ranking__tabela">
+            <table class="score__ranking__tabela caixa--degrade">
                 <thead class="score__ranking__tabela__head">
                     <tr class="score__ranking__tabela__head__linha">
                         <th class="score__ranking__tabela__head__linha__item">Posição</th>
                         <th class="score__ranking__tabela__head__linha__item">Empresa</th>
-                        <th class="score__ranking__tabela__head__linha__item">Reputação</th>
-                        <th class="score__ranking__tabela__head__linha__item">Sustentabilidade</th>
+                        <th class="score__ranking__tabela__head__linha__item"><strong class="pagina__titulo--destaque">Reputação</strong></th>
+                        <th class="score__ranking__tabela__head__linha__item"><strong class="sustentabilidade__destaque">Sustentabilidade</strong></th>
                         <th class="score__ranking__tabela__head__linha__item">Status</th>
                     </tr>
                 </thead>
 
                 <tbody class="score__ranking__tabela__body">
                     <tr class="score__ranking__tabela__body__linha">
-                        <td class="score__ranking__tabela__body__posicao">1º</td>
+                        <td class="score__ranking__tabela__body__posicao pagina__titulo--destaque">1º</td>
                         <td class="score__ranking__tabela__body__empresa">
                             <img src="/assets/astroscale.png" alt="Logo da Astroscale" class="score__ranking__tabela__body__empresa__logo">
                             Astroscale
@@ -123,7 +124,7 @@
                     </tr>
 
                     <tr class="score__ranking__tabela__body__linha">
-                        <td class="score__ranking__tabela__body__posicao">2º</td>
+                        <td class="score__ranking__tabela__body__posicao pagina__titulo--destaque">2º</td>
                         <td class="score__ranking__tabela__body__empresa">
                             <img src="/assets/leolabs.png" alt="Logo da LeoLabs" class="score__ranking__tabela__body__empresa__logo">
                             LeoLabs
@@ -134,7 +135,7 @@
                     </tr>
                     
                     <tr class="score__ranking__tabela__body__linha">
-                        <td class="score__ranking__tabela__body__posicao">3º</td>
+                        <td class="score__ranking__tabela__body__posicao pagina__titulo--destaque">3º</td>
                         <td class="score__ranking__tabela__body__empresa">
                             <img src="/assets/digantara.png" alt="Logo da Digantara" class="score__ranking__tabela__body__empresa__logo">
                             Digantara
