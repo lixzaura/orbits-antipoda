@@ -141,6 +141,10 @@ body {
     width: 26rem;
 }
 
+.inicio__descubra__conteudo__caixa__imagem {
+    width: 6rem;
+}
+
 .inicio__descubra__conteudo__caixa__texto {
     font-family: "Questrial", sans-serif; 
     font-size: 1.5rem; 
@@ -154,6 +158,10 @@ body {
     font-weight: bold;
 
 
+}
+
+.inicio__pilares__conteudo__caixa__imagem {
+    width: 4.7rem;
 }
 
 .inicio__pilares__conteudo__caixa__texto {
@@ -181,3 +189,63 @@ body {
 }
 
 /* Sobre */
+
+.sobre__apresentacao__imagem {
+    width: 15rem;
+}
+
+.sobre__visao__texto {
+    font-family: "Questrial", sans-serif;
+    color: var(--cor-branco);
+    font-size: 1.5rem;
+}
+
+.sobre__missao__conteudo {
+    width: 28rem;
+}
+
+.sobre__missao__conteudo__texto {
+    font-family: "Questrial", sans-serif;
+    color: var(--cor-branco);
+    font-size: 1rem;
+}
+
+.sobre__missao__conteudo__imagem {
+    width: 25rem;
+}
+
+.sobre__principios__conteudo__caixa {
+    width: 23rem;
+}
+
+.sobre__principios__conteudo__caixa__imagem {
+    width: 5.7rem;
+}
+
+.sobre__principios__conteudo__caixa__titulo {
+    font-family: "Quantico", sans-serif;
+    font-size: 2.3rem;
+    color: var(--cor-branco);
+}
+
+.sobre__principios__conteudo__caixa__texto {
+    font-family: "Questrial", sans-serif;
+    font-size: 1.4rem;
+    color: var(--cor-branco);
+}
+
+.sobre__final {
+    width: 24rem;
+}
+
+.sobre__final__texto {
+    font-family: "Quantico", sans-serif;
+    color: var(--cor-branco);
+    font-size: 1.2rem;
+}
+
+.sobre__final__botao {
+    font-family: "Quantico", sans-serif;
+    color: var(--cor-branco);
+    font-size: 1rem;
+}
