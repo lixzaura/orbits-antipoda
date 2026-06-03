@@ -16,8 +16,8 @@ contadores.forEach(contador =>{
 
 //função pra mudar o valor
 function animarContador(elem){
-    console.log("entrou", elem)
     const valorAlvo = Number(elem.dataset.valor);
+    const valorInicio = .7; //70% do valorAlvo
     const duracao = 1500; //em ms
     const inicio = performance.now(); //quando comecou
 
@@ -25,9 +25,9 @@ function animarContador(elem){
     function atualizar(tempoAtual){
         
         const progresso = Math.min((tempoAtual - inicio) / duracao, 1);
-        console.log("atualizou", progresso)
-        console.log(elem.textContent)
-        elem.textContent = (Math.floor(progresso * valorAlvo)).toLocaleString("pt-BR"); //arredondar
+        
+
+        elem.textContent = Math.floor((progresso * valorAlvo * (1 - valorInicio)) + (valorAlvo * valorInicio)).toLocaleString("pt-BR"); //arredondar
 
         if (progresso < 1){
             requestAnimationFrame(atualizar);
