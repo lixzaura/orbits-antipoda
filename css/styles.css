@@ -34,6 +34,11 @@ body {
     color: var(--cor-roxo)
 }
 
+.pagina__setinha {
+    width: 0.5rem;
+}
+
+
 .pagina__texto, 
 .inicio__apresentacao__conteudo__botao
  {
@@ -128,6 +133,14 @@ body {
     background: var(--grad-linear-vertical-roxo);
 }
 
+.inicio__descubra__conteudo__caixa {
+    width: 23rem;
+}
+
+.inicio__pilares__conteudo__caixa {
+    width: 26rem;
+}
+
 .inicio__descubra__conteudo__caixa__texto {
     font-family: "Questrial", sans-serif; 
     font-size: 1.5rem; 
@@ -149,3 +162,22 @@ body {
     color: var(--cor-branco);
 
 }
+
+.inicio__apresentacao__conteudo__botao {
+    width: 9rem;
+    height: 3.2rem;
+}
+
+.inicio__apresentacao__conteudo__botao--destaque {
+    background: var(--grad-linear-horizontal-roxo);
+}
+
+.inicio__apresentacao__imagem {
+    width: 15rem;
+}
+
+.inicio__video {
+    width: 25rem;
+}
+
+/* Sobre */
