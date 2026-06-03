@@ -496,3 +496,21 @@ body {
 .integrantes__secao__card__botoes__botao__logo {
     width: 1.3rem;
 }
+
+/* -=-=-=- Faq -=-=-=- Desktop first */
+
+.faq__perguntas__card {
+    width: 18rem;
+}
+
+.faq__perguntas__card__pergunta {
+    font-family: "Quantico", sans-serif;
+    font-size: 1.4rem;
+    color: var(--cor-roxo);
+}
+
+.faq__perguntas__card__resposta {
+    font-family: "Questrial", sans-serif;
+    font-size: 1rem;
+    color: var(--cor-branco)
+}
