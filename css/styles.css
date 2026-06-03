@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Questrial&display=swap');
 
+*{
+    margin: 0px; 
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+
+
 :root {
     --cor-roxo: #969BFF; 
     --cor-verde: #A2FF96;
     --cor-branco: #FFFFFF; 
-    --grad-linear-horizontal-roxo: linear-gradient(to right, #3339A4, #131314);
-    --grad-linear-vertical-roxo: linear-gradient(to up, #3339A4, #131314); 
+    --grad-linear-horizontal-roxo: linear-gradient(to right, #3339A436, #13131436);
+    --grad-linear-vertical-roxo: linear-gradient(to top, #3339A436, #13131436); 
     --grad-radial-roxo: radial-gradient(#16293D, #0B151F, #000000);
-    --grad-linear-vertical-verde: linear-gradient(to up, #4C7D35, #131314);
+    --grad-linear-vertical-verde: linear-gradient(to top, #4C7D3536, #13131436);
 }
 
 body {
@@ -26,7 +34,9 @@ body {
     color: var(--cor-roxo)
 }
 
-.pagina__texto {
+.pagina__texto, 
+.inicio__apresentacao__conteudo__botao
+ {
     font-family: "Questrial", sans-serif; 
     font-size: 1rem;
     color: var(--cor-branco)
@@ -36,5 +46,48 @@ body {
     font-family: "Quantico", sans-serif; 
     font-size: 2.1rem; 
     font-weight: bold;
-    color: var(--cor-branco)
+    color: var(--cor-branco);
 }
+/* Index */ 
+.inicio__apresentacao__conteudo__botao {
+    border: 0.15rem solid var(--cor-roxo);
+    background: none; 
+
+}
+
+.caixa, 
+.caixa--degrade
+ {
+    border: 0.15rem solid var(--cor-roxo);
+    background: none; 
+    border-radius: 0.6rem;
+
+}
+
+.caixa--degrade {
+    background: var(--grad-linear-vertical-roxo);
+}
+
+.inicio__descubra__conteudo__caixa__texto {
+    font-family: "Questrial", sans-serif; 
+    font-size: 1.5rem; 
+    color: var(--cor-branco);
+}
+
+.inicio__pilares__conteudo__caixa__titulo {
+    font-family: "Quantico", sans-serif;
+    font-size: 1.5rem;
+    color: var(--cor-branco);
+    font-weight: bold;
+
+
+}
+
+.inicio__pilares__conteudo__caixa__texto {
+    font-family: "Questrial", sans-serif;
+    font-size: 1rem; 
+    color: var(--cor-branco);
+
+}
+
+
