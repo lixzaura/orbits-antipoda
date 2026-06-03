@@ -48,6 +48,40 @@ body {
     font-weight: bold;
     color: var(--cor-branco);
 }
+/* Header */
+.header {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start; 
+    padding: 2.3rem;
+}
+
+.header__logo {
+    max-width: 12.5rem; /*tamanho mobile*/ 
+}
+
+.header__menu {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;  
+    align-items: center;
+    min-width: 48.5rem;
+    min-height: 2.3rem;
+}
+
+.header__menu__link {
+    text-decoration: none;
+    color: var(--cor-branco);
+    font-family: "Quantico", sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.header__menu__link--destaque {
+    color: var(--cor-roxo)
+}
+
 /* Index */ 
 .inicio__apresentacao__conteudo__botao {
     border: 0.15rem solid var(--cor-roxo);
@@ -89,5 +123,3 @@ body {
     color: var(--cor-branco);
 
 }
-
-
