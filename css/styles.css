@@ -373,3 +373,91 @@ body {
 .score__ranking__tabela__body__status {
     color: var(--cor-branco);
 }
+
+/*  -=-=-=- Comunidade -=-=-=- */
+
+.comunidade__apresentacao__imagem {
+    width: 25rem;
+}
+
+.comunidade__numeros__area__titulo {
+    font-family: "Quantico", sans-serif;
+    font-size: 1.8rem;
+    color: var(--cor-branco);
+}
+
+.comunidade__numeros__area__caixa {
+    width: 18rem;
+}
+
+.comunidade__numeros__area__caixa__numero {
+    font-family: "Quantico", sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--cor-branco);
+}
+
+.comunidade__numeros__area__caixa__texto {
+    font-family: "Questrial", sans-serif;
+    font-size: 1.8rem;
+    color: var(--cor-branco);
+}
+
+.comunidade__iniciativas__texto {
+    font-family: "Questrial", sans-serif;
+    color: var(--cor-branco);
+    font-size: 1.2rem;
+}
+
+.comunidade__iniciativas__iniciativa__botao {
+    font-family: "Questrial", sans-serif;
+    font-size: 1.5rem;
+    color: var(--cor-branco);
+    width: 23rem;
+}
+
+.comunidade__iniciativas__iniciativa__caixa {
+    width: 23rem;
+}
+
+.comunidade__iniciativas__iniciativa__caixa__titulo {
+    font-family: "Quantico", sans-serif;
+    font-size: 1.8rem;
+    color: var(--cor-branco);
+}
+
+.comunidade__iniciativas__iniciativa__caixa__imagem {
+    width: 22rem;
+}
+
+.comunidade__iniciativas__iniciativa__caixa__subtitulo {
+    font-family: "Quantico", sans-serif;
+    font-size: 1.5rem;
+    color: var(--cor-roxo);
+}
+
+.comunidade__iniciativas__iniciativa__caixa__texto {
+    font-family: "Questrial", sans-serif;
+    font-size: 1.1rem;
+    color: var(--cor-branco);
+}
+
+.comunidade__iniciativas__iniciativa__caixa__filtros__filtro {
+    border: 0.15rem solid var(--cor-roxo);
+    border-radius: 5rem;
+    text-decoration: none;
+    color: var(--cor-branco);
+    font-family: "Questrial", sans-serif;
+    font-size: 0.8rem;
+}
+
+.filtro--destaque {
+    background-color: var(--cor-roxo);
+}
+
+.comunidade__iniciativas__iniciativa__caixa__botao {
+    font-family: "Quantico", sans-serif;
+    font-size: 1.8rem;
+    color: var(--cor-branco);
+    width: 14rem;
+}
