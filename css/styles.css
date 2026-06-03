@@ -461,3 +461,38 @@ body {
     color: var(--cor-branco);
     width: 14rem;
 }
+
+/* -=-=-=- Integrantes -=-=-=- */
+
+.integrantes__imagem__grupo {
+    width: 30rem;
+}
+
+.integrantes__secao__card {
+    width: 24rem;
+}
+
+.integrantes__secao__card__titulo {
+    font-family: "Quantico", sans-serif;
+    font-size: 1.6rem;
+    color: var(--cor-roxo);
+}
+
+.integrantes__secao__card__imagem {
+    width: 21rem;
+}
+
+.integrantes__secao__card__rm {
+    font-family: "Questrial", sans-serif;
+    font-size: 1.3rem;
+    color: var(--cor-branco);
+}
+
+.integrantes__secao__card__botoes__botao {
+    width: 9.7rem;
+    height: 1.7rem;
+}
+
+.integrantes__secao__card__botoes__botao__logo {
+    width: 1.3rem;
+}
