@@ -746,6 +746,7 @@ main {
 .score__ranking__mobile {
     display: flex;
     flex-direction: column;
+    gap: 6.1rem;
 }
 
 .score__ranking__mobile__caixa {
@@ -807,6 +808,10 @@ main {
 }
 
 @media (min-width: 768px) {
+
+    .score__ranking__mobile {
+        display: none;
+    }
     
     /* Tabela Score - Desktop first */
     .score__ranking__tabela {
