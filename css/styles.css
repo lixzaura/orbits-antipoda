@@ -885,16 +885,28 @@ main {
         border-bottom: 0.15rem solid var(--cor-roxo);
         border-top-left-radius: 0.5rem;
         border-top-right-radius: 0.5rem;
+        
+    }
+    .score__ranking__tabela__head__linha{
+        display: grid;
+        grid-template-columns: repeat(5, 16rem);
+        align-items: center;
+        justify-items: start;
     }
 
     .score__ranking__tabela__body__linha {
         border-top: 0.15rem solid var(--cor-transparente);
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+        justify-items: start;
     }
 
     .score__ranking__tabela__head__linha__item {
         font-family: "Quantico", sans-serif;
         color: var(--cor-branco);
         font-size: 2.25rem;
+        
     }
 
     .score__ranking__tabela__body__posicao.pagina__titulo--destaque {
