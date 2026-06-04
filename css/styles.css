@@ -5,7 +5,7 @@
 *{
     margin: 0px; 
     padding: 0px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 /* varáveis */
@@ -29,12 +29,39 @@ body {
     background: var(--grad-radial-roxo);
 }
 
+html { /* responsividade do REM (mobile) */
+  font-size: clamp(0px, 3.3vw, 16px);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 1200px){ /* responsividade do REM para desktops IMENSOS */
+    html{
+        font-size: clamp(16px, 1.33vw, 20px);
+    }
+}
+
+.linha-horizontal {
+    border: none;
+    border-top: 2px solid var(--cor-branco); 
+    width: 80%;
+
+    margin-top: -2rem;
+}
+
 .pagina__titulo {
     font-family: "Quantico", sans-serif;
     font-size: 3rem; 
     font-weight: bold;
-    color: var(--cor-branco)
+    color: var(--cor-branco);
 
+    margin-bottom: 1.6rem;
+
+    line-height: 98%;
 }
 
 .pagina__titulo--destaque {
@@ -45,10 +72,7 @@ body {
     width: 0.5rem;
 }
 
-
-.pagina__texto, 
-.inicio__apresentacao__conteudo__botao
- {
+.pagina__texto{
     font-family: "Questrial", sans-serif; 
     font-size: 1rem;
     color: var(--cor-branco)
@@ -59,6 +83,24 @@ body {
     font-size: 2.1rem; 
     font-weight: bold;
     color: var(--cor-branco);
+
+    margin-bottom: 1.8rem;
+
+    text-align: center;
+}
+
+.caixa, 
+.caixa--degrade
+ {
+    display: flex;
+
+    border: 0.15rem solid var(--cor-roxo);
+    background: none; 
+    border-radius: 0.6rem;
+}
+
+.caixa--degrade {
+    background: var(--grad-linear-vertical-roxo);
 }
 
 
@@ -124,35 +166,88 @@ body {
 
 
 
-
+.header, .footer {
+    display:none
+}
 
 
 /* Index */ 
-.inicio__apresentacao__conteudo__botao {
-    border: 0.15rem solid var(--cor-roxo);
-    background: none; 
+
+.inicio {
+    gap: 5rem;
+}
+
+.inicio__apresentacao {
+    display: grid;
+    padding: 1.8rem;
+    row-gap: 2.7rem;
 
 }
 
-.caixa, 
-.caixa--degrade
- {
-    border: 0.15rem solid var(--cor-roxo);
-    background: none; 
-    border-radius: 0.6rem;
-
+.inicio__apresentacao__conteudo {
+    grid-column: 1/3;
 }
 
-.caixa--degrade {
-    background: var(--grad-linear-vertical-roxo);
+.inicio__apresentacao__botoes {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.inicio__apresentacao__botoes__botao {
+    border: 0.15rem solid var(--cor-roxo);
+    background: none; 
+    font-family: "Quantico", sans-serif; 
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--cor-branco);
+    width: 9rem;
+    height: 3.2rem;
+}
+
+.inicio__apresentacao__botoes__botao--destaque {
+    background: var(--grad-linear-horizontal-roxo);
+}
+
+.inicio__apresentacao__imagem {
+    width: 15rem;
+    height: 15rem;
+
+    margin-top: -5rem;
+
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.inicio__video {
+    width: 25rem;
+}
+
+/* descubra */
+
+.inicio__descubra {
+    display: flex;
+    flex-direction: column;
+}
+
+.inicio__descubra__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 2.7rem;
 }
 
 .inicio__descubra__conteudo__caixa {
     width: 23rem;
-}
+    padding: 1.9rem 2.4rem;
 
-.inicio__pilares__conteudo__caixa {
-    width: 26rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
 }
 
 .inicio__descubra__conteudo__caixa__imagem {
@@ -165,13 +260,37 @@ body {
     color: var(--cor-branco);
 }
 
+
+/* pilares */
+
+.inicio__pilares {
+    display: flex;
+    flex-direction: column;
+}
+
+.inicio__pilares__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.inicio__pilares__conteudo__caixa {
+    width: 26rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding: 1.9rem 2.4rem;
+    gap: 1.1rem;
+}
+
 .inicio__pilares__conteudo__caixa__titulo {
     font-family: "Quantico", sans-serif;
     font-size: 1.5rem;
     color: var(--cor-branco);
     font-weight: bold;
-
-
 }
 
 .inicio__pilares__conteudo__caixa__imagem {
@@ -185,22 +304,6 @@ body {
 
 }
 
-.inicio__apresentacao__conteudo__botao {
-    width: 9rem;
-    height: 3.2rem;
-}
-
-.inicio__apresentacao__conteudo__botao--destaque {
-    background: var(--grad-linear-horizontal-roxo);
-}
-
-.inicio__apresentacao__imagem {
-    width: 15rem;
-}
-
-.inicio__video {
-    width: 25rem;
-}
 
 
 
