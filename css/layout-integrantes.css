@@ -61,3 +61,27 @@
     width: 2rem;
     height: 2rem;
 }
+@media (min-width: 768px){
+    .integrantes__secao{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2rem 12rem;
+        gap: 4rem;
+    }
+
+    .integrantes__secao .pagina__subtitulo{
+        width: 100%;
+    }
+
+    .integrantes__secao__card{
+        width: 18rem;
+        height: 26.5rem;
+        padding: 1rem;
+    }
+
+    .integrantes__secao__card__botoes__botao{
+        width: 7.3rem;
+        height: 3rem;
+    }
+}
