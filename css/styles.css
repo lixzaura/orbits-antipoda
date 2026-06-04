@@ -514,3 +514,33 @@ body {
     font-size: 1rem;
     color: var(--cor-branco)
 }
+
+/* -=-=-=- Contato -=-=-=- */
+
+.contato__formulario__label {
+    font-family: "Quantico", sans-serif;
+    font-size: 1.8rem;
+    color: var(--cor-branco);
+    font-weight: bold;
+}
+
+.contato__formulario__input {
+    width: 26rem;
+    font-family: "Questrial", sans-serif;
+    color: var(--cor-transparente);
+    font-size: 1.3rem;
+}
+
+.contato__formulario__botao {
+    width: 10rem;
+    font-family: "Quantico", sans-serif;
+    font-size: 2.2rem;
+    color: var(--cor-branco);
+    font-weight: bold;
+}
+
+.contato__status {
+    font-family: "Questrial", sans-serif;
+    font-size: 1.3rem;
+    color: var(--cor-transparente);
+}
