@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Questrial&display=swap');
 
+/* reset */
+
 *{
     margin: 0px; 
     padding: 0px;
     box-sizing: border-box; 
 }
 
-
+/* varáveis */
 
 :root {
     --cor-roxo: #969BFF; 
@@ -19,6 +21,9 @@
     --grad-radial-roxo: radial-gradient(#16293D, #0B151F, #000000);
     --grad-linear-vertical-verde: linear-gradient(to top, #4C7D3536, #13131436);
 }
+
+
+/* classes globais */
 
 body {
     background: var(--grad-radial-roxo);
@@ -55,6 +60,8 @@ body {
     font-weight: bold;
     color: var(--cor-branco);
 }
+
+
 /* Header */
 .header {
     display: flex; 
@@ -96,6 +103,7 @@ body {
     color: var(--cor-roxo)
 }
 
+
 /* Footer */ 
 
 .footer {
@@ -113,6 +121,10 @@ body {
     font-size: 1rem; /*tamanho descktop*/
     color: var(--cor-branco)
 }
+
+
+
+
 
 
 /* Index */ 
@@ -190,6 +202,11 @@ body {
     width: 25rem;
 }
 
+
+
+
+
+
 /* Sobre */
 
 .sobre__apresentacao__imagem {
@@ -252,8 +269,11 @@ body {
     font-size: 1rem;
 }
 
-/* Score */
 
+
+
+
+/* Score */
 .score__apresentacao__imagem {
     width: 18rem;
 }
@@ -312,7 +332,6 @@ body {
 }
 
 /* Tabela Score - Desktop first */
-
 .score__ranking__tabela {
     border-collapse: collapse;
     width: 80rem;
@@ -374,8 +393,12 @@ body {
     color: var(--cor-branco);
 }
 
-/*  -=-=-=- Comunidade -=-=-=- */
 
+
+
+
+
+/*  -=-=-=- Comunidade -=-=-=- */
 .comunidade__apresentacao__imagem {
     width: 25rem;
 }
@@ -462,8 +485,12 @@ body {
     width: 14rem;
 }
 
-/* -=-=-=- Integrantes -=-=-=- */
 
+
+
+
+
+/* -=-=-=- Integrantes -=-=-=- */
 .integrantes__imagem__grupo {
     width: 30rem;
 }
@@ -497,8 +524,12 @@ body {
     width: 1.3rem;
 }
 
-/* -=-=-=- Faq -=-=-=- Desktop first */
 
+
+
+
+
+/* -=-=-=- Faq -=-=-=- Desktop first */
 .faq__perguntas__card {
     width: 18rem;
 }
@@ -515,8 +546,12 @@ body {
     color: var(--cor-branco)
 }
 
-/* -=-=-=- Contato -=-=-=- */
 
+
+
+
+
+/* -=-=-=- Contato -=-=-=- */
 .contato__formulario__label {
     font-family: "Quantico", sans-serif;
     font-size: 1.8rem;
