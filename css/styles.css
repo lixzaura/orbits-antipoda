@@ -59,7 +59,7 @@ main {
 
     margin-bottom: 1.6rem;
 
-    line-height: 98%;
+    line-height: 120%;
 }
 
 .pagina__titulo--destaque {
@@ -75,6 +75,8 @@ main {
     font-size: 1rem;
     color: var(--cor-branco);
     margin-top: 1rem;
+
+    line-height: 130%;
 }
 
 .pagina__subtitulo {
@@ -550,6 +552,82 @@ main {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .sobre__apresentacao {
+        flex-direction: row;
+        max-width: 80rem;
+    }
+
+    .sobre__apresentacao__imagem {
+        width: 37rem;
+    }
+
+    .sobre__visao {
+        margin-top: -5rem;
+    }
+
+    .sobre__visao__texto {
+        font-size: 1.8rem;
+        max-width: 46rem;
+    }
+
+    .sobre__missao__conteudo {
+        width: 74rem;
+        padding: 2.5rem 6.5rem;
+    }
+
+    .sobre__missao__conteudo__imagem {
+        width: 60.8rem;
+    }
+
+    .sobre__missao__conteudo__texto {
+        font-size: 1.8rem;
+        max-width: 41.5rem;
+    }
+
+    .sobre__principios__conteudo {
+        flex-direction: row;
+        gap: 1.1rem;
+    }
+
+    .sobre__principios__conteudo__caixa {
+        width: 16rem;
+        padding: 2rem 0.7rem;
+        gap: 0.7rem;
+    }
+
+    .sobre__principios__conteudo__caixa__imagem {
+        width: 3.8rem;
+    }
+
+    .sobre__principios__conteudo__caixa__titulo {
+        font-size: 1.6rem;
+    }
+
+    .sobre__principios__conteudo__caixa__texto {
+        font-size: 1rem;
+    }
+
+    .sobre__final {
+        flex-direction: row;
+        width: 67rem;
+        justify-content: space-between;
+        padding: 1.9rem 1.5rem;
+
+    }
+
+    .sobre__final__texto {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    .sobre__final__botao {
+        width: 19.7rem;
+        height: 4.2rem;
+        font-size: 1.3rem;
+    }
 }
 
 
