@@ -633,12 +633,46 @@ main {
 
 
 /* Score */
+
+.score {
+    gap: 6rem;
+}
+
+.score__apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+    padding: 1.8rem;
+}
+
 .score__apresentacao__imagem {
     width: 18rem;
 }
 
-.score__tipos__reputacao {
-    width: 27rem;
+/* score-tipos */
+
+.score__tipos {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.score__tipos__reputacao,
+.score__tipos__sustentabilidade {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.7rem 1.5rem;
+    gap: 1.1rem;
+}
+
+.score__tipos__reputacao .pagina__subtitulo,
+.score__tipos__sustentabilidade .pagina__subtitulo {
+    margin-bottom: -1rem;
+    text-align: left;
 }
 
 .score__tipos__reputacao__texto,
@@ -646,10 +680,27 @@ main {
     font-family: "Questrial", sans-serif;
     font-size: 1rem;
     color: var(--cor-branco);
+    margin-top: 1rem;
+    line-height: 120%;
 }
 
-.score__tipos__reputacao__conteudo__caixa {
-    width: 5rem;
+.score__tipos__reputacao__conteudo, 
+.score__tipos__sustentabilidade__conteudo {
+    display: flex;
+    justify-content: center;
+    gap: 0.9rem;
+}
+
+.score__tipos__reputacao__conteudo__caixa,
+.score__tipos__sustentabilidade__conteudo__caixa {
+    min-width: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 0.6rem;
+    gap: 0.9rem;
+    text-align: center;
 }
 
 .score__tipos__reputacao__conteudo__caixa__imagem,
@@ -661,14 +712,14 @@ main {
 .score__tipos__reputacao__conteudo__caixa__titulo,
 .score__tipos__sustentabilidade__conteudo__caixa__titulo {
     font-family: "Quantico", sans-serif;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     color: var(--cor-branco);
 }
 
 .score__tipos__reputacao__conteudo__caixa__texto,
 .score__tipos__sustentabilidade__conteudo__caixa__texto {
     font-family: "Questrial", sans-serif;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     color: var(--cor-branco);
 }
 
@@ -676,81 +727,229 @@ main {
     border: 0.15rem solid var(--cor-verde);
     background: var(--grad-linear-vertical-verde);
     border-radius: 0.6rem;
-    width: 5rem;
 }
 
 .score__tipos__sustentabilidade {
     border: 0.15rem solid var(--cor-verde);
     background: var(--grad-linear-vertical-verde);
     border-radius: 0.6rem;
-    width: 27rem;
 }
 
 .sustentabilidade__destaque {
     color: var(--cor-verde);
 }
 
-/* Tabela Score - Desktop first */
 .score__ranking__tabela {
-    border-collapse: collapse;
-    width: 80rem;
+    display: none;
 }
 
-.score__ranking__tabela__head {
-    background-color: var(--cor-preto);
-    border-top: 0.15rem solid var(--cor-roxo);
-    border-bottom: 0.15rem solid var(--cor-roxo);
+.score__ranking__mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 6.1rem;
 }
 
-.score__ranking__tabela__body__linha {
-    border-top: 0.15rem solid var(--cor-transparente);
+.score__ranking__mobile__caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 3.4rem 1.5rem;
+    gap: 3.3rem;
 }
 
-.score__ranking__tabela__head__linha__item {
+.score__ranking__mobile__caixa__posicao {
     font-family: "Quantico", sans-serif;
-    color: var(--cor-branco);
-    font-size: 2.25rem;
-}
-
-.score__ranking__tabela__body__posicao.pagina__titulo--destaque {
+    font-size: 5.6rem;
     color: var(--cor-roxo);
-}
-
-.score__ranking__tabela__body__posicao {
-    font-family: "Quantico", sans-serif;
-    font-size: 4rem;
-    color: var(--cor-branco);
     font-weight: bold;
 }
 
-.score__ranking__tabela__body__empresa {    
-    color: var(--cor-branco);
+.score__ranking__mobile__caixa__empresa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.7rem;
 }
 
-.score__ranking__tabela__body__empresa__logo {
-    width: 3.4rem;
+.score__ranking__mobile__caixa__empresa__logo {
+    width: 5rem;
 }
 
-.score__ranking__tabela__body__reputacao,
-.score__ranking__tabela__body__sustentabilidade,
-.score__ranking__tabela__body__status,
-.score__ranking__tabela__body__empresa 
-{
-    font-size: 2rem;
+.score__ranking__mobile__caixa__empresa__nome {
     font-family: "Questrial", sans-serif;
-}
-
-.score__ranking__tabela__body__reputacao {
-    color: var(--cor-roxo);
-}
-
-.score__ranking__tabela__body__sustentabilidade {
-    color: var(--cor-verde);
-}
-
-.score__ranking__tabela__body__status {
+    font-size: 2.6rem;
     color: var(--cor-branco);
 }
+
+.score__ranking__mobile__caixa__conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.7rem;
+    border-top: 2px solid var(--cor-branco);
+}
+
+.score__ranking__mobile__caixa__titulo {
+    font-family: "Quantico", sans-serif;
+    font-size: 2.6rem;
+    color: var(--cor-branco);
+    font-weight: bold;
+    text-align: center;
+}
+
+.score__ranking__mobile__caixa__texto {
+    font-family: "Questrial", sans-serif;
+    font-size: 2.2rem;
+    color: var(--cor-branco);
+    width: 18.7rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    .score__apresentacao {
+        max-width: 74rem;
+        flex-direction: row;
+    }
+
+    .score__apresentacao__imagem {
+        width: 29rem;
+    }
+
+    .score__tipos {
+        flex-direction: row;
+    }
+
+    .score__tipos__reputacao,
+    .score__tipos__sustentabilidade {
+        width: 39rem;
+        padding: 2.5rem 2.1rem;
+        gap: 1.1rem;
+    }
+
+    .score__tipos__reputacao .pagina__subtitulo,
+    .score__tipos__sustentabilidade .pagina__subtitulo {
+        font-size: 2.5rem;
+    }
+
+    .score__tipos__reputacao__texto,
+    .score__tipos__sustentabilidade__texto {
+        font-size: 1.3rem;
+        line-height: 150%;
+    }
+
+    .score__tipos__reputacao__conteudo, 
+    .score__tipos__sustentabilidade__conteudo {
+        gap: 1.5rem;
+    }
+
+    .score__tipos__reputacao__conteudo__caixa,
+    .score__tipos__sustentabilidade__conteudo__caixa {
+        min-width: 8rem;
+        
+        padding: 0.8rem 0.7rem;
+        gap: 0.9rem;
+    }
+
+    .score__tipos__reputacao__conteudo__caixa__imagem,
+    .score__tipos__sustentabilidade__conteudo__caixa__imagem {
+        width: 5.3rem;
+    }
+
+    .score__tipos__reputacao__conteudo__caixa__titulo,
+    .score__tipos__sustentabilidade__conteudo__caixa__titulo {
+        font-size: 1rem;
+    }
+
+    .score__tipos__reputacao__conteudo__caixa__texto,
+    .score__tipos__sustentabilidade__conteudo__caixa__texto {
+        font-size: 0.8rem;
+    }
+
+    .score__ranking__mobile {
+        display: none;
+    }
+    
+    /* Tabela Score - Desktop first */
+    .score__ranking__tabela {
+        display: flex; 
+        flex-direction: column;
+        border-collapse: collapse;
+        width: 80rem;
+    }
+
+    .score__ranking__tabela__head {
+        background-color: var(--cor-preto);
+        border-bottom: 0.15rem solid var(--cor-roxo);
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        
+    }
+    .score__ranking__tabela__head__linha{
+        display: grid;
+        grid-template-columns: repeat(5, 16rem);
+        align-items: center;
+        justify-items: start;
+    }
+
+    .score__ranking__tabela__body__linha {
+        border-top: 0.15rem solid var(--cor-transparente);
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+        justify-items: start;
+    }
+
+    .score__ranking__tabela__head__linha__item {
+        font-family: "Quantico", sans-serif;
+        color: var(--cor-branco);
+        font-size: 2.25rem;
+        
+    }
+
+    .score__ranking__tabela__body__posicao.pagina__titulo--destaque {
+        color: var(--cor-roxo);
+    }
+
+    .score__ranking__tabela__body__posicao {
+        font-family: "Quantico", sans-serif;
+        font-size: 4rem;
+        color: var(--cor-branco);
+        font-weight: bold;
+    }
+
+    .score__ranking__tabela__body__empresa {    
+        color: var(--cor-branco);
+    }
+
+    .score__ranking__tabela__body__empresa__logo {
+        width: 3.4rem;
+    }
+
+    .score__ranking__tabela__body__reputacao,
+    .score__ranking__tabela__body__sustentabilidade,
+    .score__ranking__tabela__body__status,
+    .score__ranking__tabela__body__empresa 
+    {
+        font-size: 2rem;
+        font-family: "Questrial", sans-serif;
+    }
+
+    .score__ranking__tabela__body__reputacao {
+        color: var(--cor-roxo);
+    }
+
+    .score__ranking__tabela__body__sustentabilidade {
+        color: var(--cor-verde);
+    }
+
+    .score__ranking__tabela__body__status {
+        color: var(--cor-branco);
+    }
+}
+
 
 
 
