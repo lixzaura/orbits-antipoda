@@ -1270,6 +1270,21 @@ main {
     transform: scale(1.05);
 }
 
+.comunidade__iniciativas__modal{
+    background: 
+        var(--grad-linear-vertical-roxo),
+        var(--cor-preto);
+    height: 15rem;
+    width: 20rem;
+    align-self: center;
+    align-content: center;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 @media (min-width: 768px) {
 
     .comunidade__apresentacao {

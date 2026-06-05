@@ -1,5 +1,7 @@
 const contadores = document.querySelectorAll(".comunidade__numeros__area__caixa__numero");
 
+const modal
+
 //Cria um observador para checar QUANDO o elemento entra na tela
 const observer = new IntersectionObserver((entries) =>{
     entries.forEach(entry =>{
