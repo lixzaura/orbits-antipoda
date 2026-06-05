@@ -184,6 +184,12 @@ main {
     color: var(--cor-roxo)
 }
 
+.header__menu__link:hover,
+.footer__menu__link:hover {
+    transform: scale(1.05);
+    opacity: .7;
+}
+
 
 /* Footer */ 
 
@@ -252,6 +258,11 @@ main {
 
 .inicio__apresentacao__botoes__botao--destaque {
     background: var(--grad-linear-horizontal-roxo);
+}
+
+.inicio__apresentacao__botoes__botao:hover {
+    background-color: var(--cor-roxo);
+    transform: scale(1.05);
 }
 
 .inicio__apresentacao__imagem {
@@ -557,6 +568,11 @@ main {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+}
+
+.sobre__final__botao:hover {
+    background-color: var(--cor-roxo);
+    transform: scale(1.05);
 }
 
 @media (min-width: 768px) {
@@ -1141,6 +1157,11 @@ main {
     padding: 0.5rem;
 }
 
+.comunidade__iniciativas__iniciativa__caixa__filtros__filtro:hover{
+    transform: scale(1.05);
+    cursor:default;
+}
+
 .filtro--destaque {
     background-color: var(--cor-roxo);
 }
@@ -1270,6 +1291,11 @@ main {
 .integrantes__secao__card__botoes__botao {
     width: 9.7rem;
     height: 1.7rem;
+}
+
+.integrantes__secao__card__botoes__botao:hover {
+    background-color: var(--cor-transparente);
+    transform: scale(1.05);
 }
 
 .integrantes__secao__card__botoes__botao__logo {
