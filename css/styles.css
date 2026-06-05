@@ -173,14 +173,45 @@ main {
     max-width: 12.5rem; /*tamanho mobile*/ 
 }
 
-.header__menu,
+.header__menu.inativo,
 .footer__menu
  {
     display: none; 
 
 }
 
+.header__menu{
+    background-color: color-mix(
+        in srgb,
+        var(--cor-preto) 50%,
+        transparent
+    );
+    border-radius: 1.5rem;
 
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    position: absolute;
+    top: 5.22rem;
+    right: 2.24rem;
+
+    padding: .3rem;
+}
+
+
+.header__menu__link{
+
+    text-decoration: none;
+    color: var(--cor-branco);
+    font-family: "Quantico", sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    
+
+}
 
 /* Footer */ 
 
@@ -221,7 +252,7 @@ main {
 
     .header__menu,
     .footer__menu{
-        display: flex;
+        display: flex !important;
         flex-direction: row;
         justify-content: space-evenly;  
         align-items: center;
