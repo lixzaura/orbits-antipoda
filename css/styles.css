@@ -765,6 +765,7 @@ main {
 }
 
 .score__ranking__mobile {
+    min-width: 24.6rem;
     display: flex;
     flex-direction: column;
     gap: 6.1rem;
@@ -780,7 +781,13 @@ main {
     gap: 3.3rem;
 }
 
+.score__ranking__mobile__caixa.inativo{
+    padding: 2.5rem 1.5rem;
+    gap: 0rem;
+}
+
 .score__ranking__mobile__caixa__posicao {
+    cursor: pointer;
     font-family: "Quantico", sans-serif;
     font-size: 5.6rem;
     color: var(--cor-roxo);
@@ -788,6 +795,7 @@ main {
 }
 
 .score__ranking__mobile__caixa__empresa {
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -810,6 +818,10 @@ main {
     align-items: center;
     padding-top: 2.7rem;
     border-top: 2px solid var(--cor-branco);
+}
+
+.score__ranking__mobile__caixa__conteudo.inativo{
+    display: none;
 }
 
 .score__ranking__mobile__caixa__titulo {
