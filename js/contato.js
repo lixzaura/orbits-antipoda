@@ -7,7 +7,16 @@ const messageInput = document.getElementById("message");
 
 const status = document.querySelector(".contato__status");
 
+const modal = document.querySelector(".contato__modal-fundo"); //modal
+const modalFechar = document.querySelector(".contato__modal__fechar"); //modal
+
 const userList = [];
+
+function fecharModal() {
+    modal.classList.remove("ativo"); //modal
+}
+
+modalFechar.addEventListener("click", fecharModal); //modal
 
 form.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -37,21 +46,20 @@ form.addEventListener("submit", function (e) {
         return;
     }
 
-    const usuario = {
+    const cliente = {
         nome: name,
         email: mail,
         telefone: phone,
         mensagem: message
     };
 
-    userList.push(usuario);
+    userList.push(cliente);
 
     console.log(userList);
 
     status.textContent = "Status: Mensagem enviada com sucesso!";
 
-    nameInput.value = "";
-    mailInput.value = "";
-    phoneInput.value = "";
-    messageInput.value = "";
+    form.reset();
+
+    modal.classList.add("ativo"); //modal
 });
