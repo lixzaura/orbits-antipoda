@@ -1282,6 +1282,11 @@ main {
     height: 1.7rem;
 }
 
+.integrantes__secao__card__botoes__botao:hover {
+    background-color: var(--cor-transparente);
+    transform: scale(1.05);
+}
+
 .integrantes__secao__card__botoes__botao__logo {
     width: 1.3rem;
 }
