@@ -1039,6 +1039,13 @@ main {
     width: 25.7rem;
 }
 
+.comunidade__iniciativas__area {
+    display: flex;
+    flex-direction: column;
+    gap: 7.6rem;
+    text-align: center;
+}
+
 .comunidade__iniciativas__iniciativa{
     display: flex;
     flex-direction: column;
@@ -1151,6 +1158,58 @@ main {
     transform: scale(1.05);
 }
 
+@media (min-width: 768px) {
+
+    .comunidade__apresentacao {
+        max-width: 52.2rem;
+    }
+
+    .comunidade__apresentacao__imagem {
+        width: 74.5rem;
+    }
+
+    .comunidade__numeros__area {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .comunidade__numeros__area__caixa {
+        width: 23.4rem;
+        padding: 1rem 1.8rem;
+    }
+
+    .comunidade__numeros__area__caixa__numero {
+            font-size: 5rem;
+    }
+
+    .comunidade__numeros__area__caixa__texto {
+        font-size: 2rem;
+    }
+
+    .comunidade__iniciativas__texto {
+        font-size: 1.6rem;
+        width: 50rem;
+    }
+
+    .comunidade__iniciativas__area {
+        flex-direction: row;
+        gap: 2.75rem;
+    }
+
+    .comunidade__iniciativas__iniciativa{
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+    }
+
+    .comunidade__iniciativas__iniciativa__caixa {
+        height: 47rem;
+    }
+
+    .comunidade__iniciativas__iniciativa__caixa__titulo {
+        font-size: 1.8rem;
+    }
+}
 
 
 
