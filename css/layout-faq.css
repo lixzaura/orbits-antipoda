@@ -16,7 +16,6 @@
 
 .faq__perguntas__card{
     width: 27rem;
-    height: 40rem;
 
     display: flex;
     flex-direction: column;
@@ -25,6 +24,7 @@
     align-items: center;
 
     padding: 3rem 1.5rem;
+    gap: 2rem;
 }
 
 .faq__perguntas__card__pergunta{
@@ -35,10 +35,16 @@
     text-align: center;
 
     padding-bottom: 3rem;
+    cursor: pointer;
     
+}
+.faq__perguntas__card__pergunta.inativo{
+    border: none;
+    padding-bottom: 0rem;
 }
 
 .faq__perguntas__card__resposta{
+    display: block;
     font-family: "Questrial", sans-serif;
     font-size: 1.6rem;
 
@@ -46,7 +52,20 @@
     text-align: center;
 }
 
+.faq__perguntas__card__resposta.inativo{
+    display: none;
+}
+
 @media (min-width: 768px){
+
+    .faq__perguntas__card__pergunta.inativo{
+        border-bottom: .15rem solid var(--cor-branco);
+        padding-bottom: 3rem;
+    }
+
+    .faq__perguntas__card__resposta.inativo{
+        display: block;
+    }
 
     .faq__perguntas{
         flex-direction: row;
