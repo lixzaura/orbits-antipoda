@@ -1157,6 +1157,11 @@ main {
     padding: 0.5rem;
 }
 
+.comunidade__iniciativas__iniciativa__caixa__filtros__filtro:hover{
+    transform: scale(1.05);
+    cursor:default;
+}
+
 .filtro--destaque {
     background-color: var(--cor-roxo);
 }
