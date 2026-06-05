@@ -254,6 +254,11 @@ main {
     background: var(--grad-linear-horizontal-roxo);
 }
 
+.inicio__apresentacao__botoes__botao:hover {
+    background-color: var(--cor-roxo);
+    transform: scale(1.05);
+}
+
 .inicio__apresentacao__imagem {
     width: 15rem;
     height: 15rem;
@@ -557,6 +562,11 @@ main {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+}
+
+.sobre__final__botao:hover {
+    background-color: var(--cor-roxo);
+    transform: scale(1.05);
 }
 
 @media (min-width: 768px) {
