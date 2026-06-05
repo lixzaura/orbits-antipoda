@@ -246,6 +246,8 @@ main {
     align-items: center;
     justify-content: center;
     gap: 1.8rem;
+
+    text-decoration: none;
 }
 
 .inicio__apresentacao__botoes__botao--destaque {
@@ -539,12 +541,15 @@ main {
     color: var(--cor-branco);
     font-size: 1.1rem;
     text-align: center;
+    font-weight: bold;
 }
 
 .sobre__final__botao {
     font-family: "Quantico", sans-serif;
     color: var(--cor-branco);
     font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
 
     width: 15rem;
     height: 3.3rem;
