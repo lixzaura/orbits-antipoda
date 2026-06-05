@@ -1164,6 +1164,13 @@ main {
         max-width: 52.2rem;
     }
 
+    .comunidade__apresentacao>:nth-child(1),
+    .comunidade__apresentacao>:nth-child(2),
+    .comunidade__apresentacao>:nth-child(3){
+        margin-left: -12.8rem;
+    }
+
+
     .comunidade__apresentacao__imagem {
         width: 74.5rem;
     }
@@ -1186,9 +1193,18 @@ main {
         font-size: 2rem;
     }
 
+    .comunidade__iniciativas__conteudo{
+        align-self: start;
+        align-items: start;
+        text-align: start;
+        
+    }
+
+    .comunidade__iniciativas__conteudo
     .comunidade__iniciativas__texto {
         font-size: 1.6rem;
         width: 50rem;
+        text-align: left;
     }
 
     .comunidade__iniciativas__area {
@@ -1208,6 +1224,11 @@ main {
 
     .comunidade__iniciativas__iniciativa__caixa__titulo {
         font-size: 1.8rem;
+        height: 3.9rem;
+        margin: 0 -2rem;
+    }
+    .comunidade__iniciativas__iniciativa__caixa__texto{
+        height: 7.24rem;
     }
 }
 
