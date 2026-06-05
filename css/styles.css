@@ -184,6 +184,12 @@ main {
     color: var(--cor-roxo)
 }
 
+.header__menu__link:hover,
+.footer__menu__link:hover {
+    transform: scale(1.05);
+    opacity: .7;
+}
+
 
 /* Footer */ 
 
