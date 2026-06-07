@@ -148,6 +148,24 @@ main {
 
     background: var(--grad-linear-vertical-roxo);
 
+    z-index: 1000;
+
+}
+
+.header__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--cor-transparente-preta);
+
+    z-index: 1001;
 }
 
 .header__button{
@@ -164,6 +182,9 @@ main {
     justify-content: start;
     align-items: stretch;
     gap: .6rem;
+
+    position: relative;
+    z-index: 1002;
     
 }
 
@@ -184,20 +205,6 @@ main {
  {
     display: none; 
 
-}
-
-.header__menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    background-color: var(--cor-transparente-preta);
 }
 
 .header__menu__link{
