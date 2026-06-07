@@ -1054,14 +1054,18 @@ main {
         font-size: 4rem;
         color: var(--cor-branco);
         font-weight: bold;
+        padding-left: 1rem;
     }
 
     .score__ranking__tabela__body__empresa {    
         color: var(--cor-branco);
+        display: flex;
+        align-items: center;
     }
 
     .score__ranking__tabela__body__empresa__logo {
         width: 3.4rem;
+        margin-right: 0.5rem;
     }
 
     .score__ranking__tabela__body__reputacao,
