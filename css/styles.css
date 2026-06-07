@@ -174,6 +174,11 @@ main {
 
     background: none;
     border: none;
+
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: white;
+
     height: 2.1rem;
     width: 2.46rem;
     display: flex;
@@ -185,13 +190,6 @@ main {
 
     position: relative;
     z-index: 1002;
-    
-}
-
-.header__button__linha{
-    background-color: var(--cor-branco);
-    border-radius: 1rem;
-    height: .34rem;
     
 }
 
