@@ -16,6 +16,7 @@
     --cor-branco: #FFFFFF; 
     --cor-preto: #06060d;
     --cor-transparente: #9499ff67;
+    --cor-transparente-preta: #06060db7;
     --grad-linear-horizontal-roxo: linear-gradient(to right, #3339A436, #13131436);
     --grad-linear-vertical-roxo: linear-gradient(to top, #3339A436, #13131436); 
     --grad-radial-roxo: radial-gradient(#16293D, #0B151F, #000000);
@@ -37,6 +38,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding-top: 8rem;
 }
 
 .linha-horizontal {
@@ -107,12 +110,9 @@ main {
 /* responsividade */
 
 @media (min-width: 768px) { 
+
     html {
         font-size: max(8px, 1.16vw);
-    }
-
-    .footer {
-        margin-top: 5rem;
     }
 
     .pagina__titulo {
@@ -141,7 +141,31 @@ main {
     flex-direction: row;
     justify-content: space-between;
 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 
+    background: var(--grad-linear-vertical-roxo);
+
+    z-index: 1000;
+
+}
+
+.header__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--cor-transparente-preta);
+
+    z-index: 1001;
 }
 
 .header__button{
@@ -158,6 +182,9 @@ main {
     justify-content: start;
     align-items: stretch;
     gap: .6rem;
+
+    position: relative;
+    z-index: 1002;
     
 }
 
@@ -179,28 +206,6 @@ main {
     display: none; 
 
 }
-
-.header__menu{
-    background-color: color-mix(
-        in srgb,
-        var(--cor-preto) 50%,
-        transparent
-    );
-    border-radius: 1.5rem;
-
-    display: flex;
-    flex-direction: column;
-
-    justify-content: space-evenly;
-    align-items: center;
-
-    position: absolute;
-    top: 5.22rem;
-    right: 2.24rem;
-
-    padding: .3rem;
-}
-
 
 .header__menu__link{
 
@@ -233,12 +238,19 @@ main {
 
 /*Responsividade: Header & footer*/
 @media(min-width: 768px){
+    main {
+        padding-top: 0;
+    }
+
     .header {
         display: flex; 
         flex-direction: row;
         justify-content: space-between;
         align-items: center; 
         padding: 2.3rem;
+
+        position: relative;
+        background: #00000000; 
     }
 
     .header__logo {
@@ -248,6 +260,19 @@ main {
 
     .header__button{
         display: none;
+    }
+
+
+    .header__menu {
+        position: static;
+
+        width: auto;
+        height: auto;
+
+        background: transparent;
+
+        flex-direction: row;
+        gap: 0;
     }
 
     .header__menu,
@@ -280,6 +305,10 @@ main {
     .footer__menu__link:hover {
         transform: scale(1.05);
         opacity: .7;
+    }
+
+    .footer {
+        margin-top: 5rem;
     }
 
 }
@@ -1596,11 +1625,10 @@ main {
     justify-content: center;
     align-items: center;
 
-    background: rgba(0, 0, 0, 0.75);
+    background: var(--cor-transparente-preta);
 
     padding: 2rem;
 
-    z-index: 999;
 }
 
 .contato__modal-fundo.ativo {
