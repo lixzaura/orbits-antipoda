@@ -37,6 +37,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding-top: 6rem;
 }
 
 .linha-horizontal {
@@ -107,12 +109,9 @@ main {
 /* responsividade */
 
 @media (min-width: 768px) { 
+
     html {
         font-size: max(8px, 1.16vw);
-    }
-
-    .footer {
-        margin-top: 5rem;
     }
 
     .pagina__titulo {
@@ -141,6 +140,13 @@ main {
     flex-direction: row;
     justify-content: space-between;
 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: var(--grad-linear-vertical-roxo);
 
 }
 
@@ -233,12 +239,19 @@ main {
 
 /*Responsividade: Header & footer*/
 @media(min-width: 768px){
+    main {
+        padding-top: 0;
+    }
+
     .header {
         display: flex; 
         flex-direction: row;
         justify-content: space-between;
         align-items: center; 
         padding: 2.3rem;
+
+        position: relative;
+        background: #00000000; 
     }
 
     .header__logo {
@@ -280,6 +293,10 @@ main {
     .footer__menu__link:hover {
         transform: scale(1.05);
         opacity: .7;
+    }
+
+    .footer {
+        margin-top: 5rem;
     }
 
 }
