@@ -827,6 +827,12 @@ main {
     text-align: center;
 }
 
+.score__tipos__reputacao__conteudo__caixa:hover,
+.score__tipos__sustentabilidade__conteudo__caixa:hover {
+    transform: scale(1.05);
+    background-color: var(--cor-transparente-preta);
+}
+
 .score__tipos__reputacao__conteudo__caixa__imagem,
 .score__tipos__sustentabilidade__conteudo__caixa__imagem
 {
