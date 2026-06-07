@@ -1342,6 +1342,7 @@ main {
     width: 90%;
     font-family: "Questrial", sans-serif;
     color: var(--cor-transparente);
+    background-color: rgba(0, 0, 0, 0);
     font-size: 1.3rem;
 }
 .comunidade__iniciativas__modal__fechar{
