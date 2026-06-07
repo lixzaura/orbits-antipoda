@@ -827,6 +827,12 @@ main {
     text-align: center;
 }
 
+.score__tipos__reputacao__conteudo__caixa:hover,
+.score__tipos__sustentabilidade__conteudo__caixa:hover {
+    transform: scale(1.05);
+    background-color: var(--cor-transparente-preta);
+}
+
 .score__tipos__reputacao__conteudo__caixa__imagem,
 .score__tipos__sustentabilidade__conteudo__caixa__imagem
 {
@@ -1054,14 +1060,18 @@ main {
         font-size: 4rem;
         color: var(--cor-branco);
         font-weight: bold;
+        padding-left: 1rem;
     }
 
     .score__ranking__tabela__body__empresa {    
         color: var(--cor-branco);
+        display: flex;
+        align-items: center;
     }
 
     .score__ranking__tabela__body__empresa__logo {
         width: 3.4rem;
+        margin-right: 0.5rem;
     }
 
     .score__ranking__tabela__body__reputacao,
