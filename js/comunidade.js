@@ -88,29 +88,40 @@ function animarContador(elem){
 
 //tags
 const tags = document.querySelectorAll('.comunidade__tag');
-    const search = document.querySelector('.comunidade__tags__search');
-    const tagsContainer = document.querySelector('.comunidade__tags');
+const search = document.querySelector('.comunidade__tags__search');
+const tagsContainer = document.querySelector('.comunidade__tags');
 
-    tags.forEach((tag, index) => {
-        tag.style.viewTransitionName = `tag-${index}`;
-        tag.style.order = index;
+const iniciativas = document.querySelectorAll(".comunidade__iniciativas__iniciativa__caixa")
+
+tags.forEach((tag, index) => {
+    tag.style.viewTransitionName = `tag-${index}`;
+    tag.style.order = index;
+});
+
+tagsContainer.addEventListener('click', (e) => {
+    const tag = e.target.closest('button');
+    if (!tag) return;
+
+    document.startViewTransition(() => {
+        search.appendChild(tag);
     });
+});
 
-    tagsContainer.addEventListener('click', (e) => {
-        const tag = e.target.closest('button');
-        if (!tag) return;
+search.addEventListener('click', (e) => {
+    const span = e.target.closest('span');
+    if (!span) return;
 
-        document.startViewTransition(() => {
-            search.appendChild(tag);
-        });
+    const tag = span.closest('button');
+    document.startViewTransition(() => {
+        tagsContainer.appendChild(tag);
     });
+});
 
-    search.addEventListener('click', (e) => {
-        const span = e.target.closest('span');
-        if (!span) return;
 
-        const tag = span.closest('button');
-        document.startViewTransition(() => {
-            tagsContainer.appendChild(tag);
-        });
+function render(){}
+
+function renderIniciativasList(){
+    iniciativas.forEach(iniciativa =>{
+        renderIniciativa(iniciativa)
     });
+}
