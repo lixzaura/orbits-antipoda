@@ -21,6 +21,7 @@
     --grad-linear-vertical-roxo: linear-gradient(to top, #3339A436, #13131436); 
     --grad-radial-roxo: radial-gradient(#16293D, #0B151F, #000000);
     --grad-linear-vertical-verde: linear-gradient(to top, #4C7D3536, #13131436);
+    --grad-iniciativa: linear-gradient(to bottom, #969BFF, #15152e36);
 }
 
 
@@ -1210,7 +1211,7 @@ main {
 }
 .comunidade__tag:hover {
     transform: translateY(-1px) scale(1.03);
-    background: var(--cor-branco);
+    background: var(--cor-roxo);
     color: #020617;
 }
 
@@ -1302,6 +1303,10 @@ main {
 
     padding: 2rem 1.5rem;
     gap: 1.5rem;
+}
+
+.comunidade__iniciativas__iniciativa__caixa.comunidade__iniciativa--destaque{
+    background: var(--grad-iniciativa);
 }
 
 .comunidade__iniciativas__iniciativa__caixa__titulo {

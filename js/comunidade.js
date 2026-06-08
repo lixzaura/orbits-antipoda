@@ -92,6 +92,10 @@ const search = document.querySelector('.comunidade__tags__search');
 const tagsContainer = document.querySelector('.comunidade__tags');
 
 const iniciativas = document.querySelectorAll(".comunidade__iniciativas__iniciativa__caixa")
+iniciativas.forEach(iniciativa =>{
+    iniciativa.setAttribute("filtrosAtivos", 0);
+});
+const activeTags = [];
 
 tags.forEach((tag, index) => {
     tag.style.viewTransitionName = `tag-${index}`;
@@ -102,6 +106,8 @@ tagsContainer.addEventListener('click', (e) => {
     const tag = e.target.closest('button');
     if (!tag) return;
 
+    activeTags.push(tag.dataset.tag);
+    render()
     document.startViewTransition(() => {
         search.appendChild(tag);
     });
@@ -111,17 +117,52 @@ search.addEventListener('click', (e) => {
     const span = e.target.closest('span');
     if (!span) return;
 
+    
     const tag = span.closest('button');
+    const index = activeTags.indexOf(tag.dataset.tag);
+    if (index !== -1){
+        activeTags.splice(index, 1);
+    }
+    render();
     document.startViewTransition(() => {
         tagsContainer.appendChild(tag);
     });
 });
 
+function renderIniciativa(iniciativa){
+    const filtros = iniciativa.querySelectorAll(".comunidade__iniciativas__iniciativa__caixa__filtros__filtro");
+    let activefilters = 0;
+    filtros.forEach(filtro =>{
+        if (activeTags.includes(filtro.dataset.tag)){
+            filtro.classList.add("filtro--destaque");
+            activefilters = activefilters + 1;
+        } else{
+            filtro.classList.remove("filtro--destaque");
+        }
+        
+    });
+    iniciativa.setAttribute("filtrosAtivos", activefilters);
 
-function render(){}
+}
 
 function renderIniciativasList(){
+    let maior = 0
     iniciativas.forEach(iniciativa =>{
-        renderIniciativa(iniciativa)
+        renderIniciativa(iniciativa);
+        if (iniciativa.getAttribute("filtrosAtivos") > maior){
+            maior = iniciativa.getAttribute("filtrosAtivos");
+        }
     });
+
+    iniciativas.forEach(iniciativa =>{
+        if (iniciativa.getAttribute("filtrosAtivos") >= maior && maior > 0){
+            iniciativa.classList.add("comunidade__iniciativa--destaque");
+        } else{
+            iniciativa.classList.remove("comunidade__iniciativa--destaque");
+        }
+    });
+}
+
+function render(){
+    renderIniciativasList();
 }
