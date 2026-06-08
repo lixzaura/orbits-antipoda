@@ -1210,7 +1210,7 @@ main {
 }
 .comunidade__tag:hover {
     transform: translateY(-1px) scale(1.03);
-    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    background: var(--cor-branco);
     color: #020617;
 }
 
@@ -1225,7 +1225,7 @@ main {
 
 .comunidade__tags__search .comunidade__tag {
     background: var(--cor-roxo);
-    color: #022c22;
+    color: var(--cor-preto);
 }
 
 .comunidade__tags__search .comunidade__tag span {
@@ -1494,6 +1494,24 @@ main {
 
     .comunidade__numeros__area__caixa__texto {
         font-size: 2rem;
+    }
+
+
+    /*TAGS*/
+    .comunidade__tags-section{
+        
+        width: 50rem;
+    }
+    .comunidade__tags{
+        width: 100%;
+        gap: .5rem;
+    }
+    .comunidade__tags__search{
+        width: 100%;
+    }
+    .comunidade__tag{
+        padding: .8rem .5rem;
+        font-size: 1.5rem;
     }
 
     .comunidade__iniciativas__conteudo{
