@@ -1160,6 +1160,80 @@ main {
     color: var(--cor-branco);
 }
 
+/*TAGS*/
+.comunidade__tags-section{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    padding: 3rem;
+}
+.comunidade__tags__search{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+    width: 23rem;
+    min-height: 3.8rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: var(--grad-linear-horizontal-roxo);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    margin-bottom: 1.9rem;
+}
+.comunidade__tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    width: 23rem;
+    padding: 1rem;
+    background: var(--grad-linear-horizontal-roxo);
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+.comunidade__tag{
+    padding: .67rem .8rem;
+    border-radius: 999px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    background: var(--grad-linear-horizontal-roxo);
+    color: #e5e7eb;
+    transition: all .25s ease;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .35);
+
+}
+.comunidade__tag:hover {
+    transform: translateY(-1px) scale(1.03);
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #020617;
+}
+
+/* Remove icon */
+.comunidade__tag span {
+    display: none;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, .25);
+    padding: .15rem .447rem;
+    border-radius: 50%;
+}
+
+.comunidade__tags__search .comunidade__tag {
+    background: var(--cor-roxo);
+    color: #022c22;
+}
+
+.comunidade__tags__search .comunidade__tag span {
+    display: inline-block;
+}
+
+
+
 .comunidade__iniciativas {
     display: flex;
     flex-direction: column;
