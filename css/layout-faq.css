@@ -58,14 +58,14 @@
 
 @media (min-width: 768px){
 
-    .faq__perguntas__card__pergunta.inativo{
-        border-bottom: .15rem solid var(--cor-branco);
-        padding-bottom: 3rem;
+    .faq .pagina__titulo{
+        margin-bottom: 5rem;
     }
 
-    .faq__perguntas__card__resposta.inativo{
-        display: block;
+    .faq__perguntas__card__pergunta.inativo{
+        align-content: center
     }
+
 
     .faq__perguntas{
         flex-direction: row;
@@ -78,19 +78,29 @@
 
     .faq__perguntas__card{
         width: 20rem;
-        height: 26.5rem;
+        height: 27.5rem;
         padding: 2rem 1rem;
         justify-content: start;
         gap: 2rem;
     }
+
+    .faq__perguntas__card.inativo{
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        justify-content: center;
+        height: 10.5rem;
+    }
+    
     .faq__perguntas__card__pergunta{
+        padding-bottom: 2rem;
         width: 100%;
         font-size: 1.4rem;
-        height: 6rem;
+        height: auto;
     }
     
     .faq__perguntas__card__resposta{
         width: 100%;
+        max-width: 16.42rem;
         font-size: 1rem;
     }
 }

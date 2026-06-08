@@ -6,10 +6,12 @@ cards.forEach(card =>{
     
     question.classList.add("inativo")
     answer.classList.add("inativo");
+    card.classList.add("inativo")
 
     question.addEventListener("click", () =>{
         answer.classList.toggle("inativo");
         question.classList.toggle("inativo");
+        card.classList.toggle("inativo");
     });
 
 });
