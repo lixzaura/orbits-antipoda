@@ -253,6 +253,7 @@ main {
     }
 
     .header__logo {
+        padding: 0rem;
         margin-top: 0rem;
         max-width: 6rem;
     }
@@ -471,6 +472,7 @@ main {
     .inicio__apresentacao__conteudo {
         grid-column: 1/2;
         grid-row: 1/2;
+        width: 40.3rem;
     }
 
     .inicio__apresentacao__botoes {
