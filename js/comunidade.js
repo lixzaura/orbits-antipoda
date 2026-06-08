@@ -1,7 +1,5 @@
-const contadores = document.querySelectorAll(".comunidade__numeros__area__caixa__numero");
-
 const emails = [];
-
+// variaveis do modal
 const modal = document.querySelector(".comunidade__iniciativas__modal");
 const modalInput = document.querySelector(".comunidade__iniciativas__formulario__input");
 const modalLabel = document.querySelector(".comunidade__iniciativas__formulario__label");
@@ -11,6 +9,7 @@ const modalFechar = modal.querySelector(".comunidade__iniciativas__modal__fechar
 const modalStatus = modal.querySelector(".comunidade__iniciativas__modal__status")
 const iniciativaBotoes = document.querySelectorAll(".comunidade__iniciativas__iniciativa__caixa__botao");
 
+//modal
 modal.classList.add("inativo");
 modalStatus.classList.add("inativo");
 
@@ -46,8 +45,8 @@ modalForm.addEventListener("submit", (e) =>{
 
 
 
-
-
+const contadores = document.querySelectorAll(".comunidade__numeros__area__caixa__numero");
+// NUMEROS CRESCENDO
 //Cria um observador para checar QUANDO o elemento entra na tela
 const observer = new IntersectionObserver((entries) =>{
     entries.forEach(entry =>{
@@ -86,3 +85,32 @@ function animarContador(elem){
 
     requestAnimationFrame(atualizar);
 }
+
+//tags
+const tags = document.querySelectorAll('.comunidade__tag');
+    const search = document.querySelector('.comunidade__tags__search');
+    const tagsContainer = document.querySelector('.comunidade__tags');
+
+    tags.forEach((tag, index) => {
+        tag.style.viewTransitionName = `tag-${index}`;
+        tag.style.order = index;
+    });
+
+    tagsContainer.addEventListener('click', (e) => {
+        const tag = e.target.closest('button');
+        if (!tag) return;
+
+        document.startViewTransition(() => {
+            search.appendChild(tag);
+        });
+    });
+
+    search.addEventListener('click', (e) => {
+        const span = e.target.closest('span');
+        if (!span) return;
+
+        const tag = span.closest('button');
+        document.startViewTransition(() => {
+            tagsContainer.appendChild(tag);
+        });
+    });
