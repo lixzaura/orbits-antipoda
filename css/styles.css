@@ -1798,7 +1798,7 @@ main {
     }
 
     .faq__perguntas__card__pergunta.inativo{
-        align-content: center
+        align-content: center;
     }
 
 
@@ -1922,7 +1922,7 @@ main {
     text-align: center;
 }
 
-.contato__status {  * 
+.contato__status {   
     font-family: "Questrial", sans-serif;
     font-size: 1.3rem;
     color: var(--cor-transparente);
