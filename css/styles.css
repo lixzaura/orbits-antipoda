@@ -1670,7 +1670,7 @@ main {
 }
 
 .integrantes__secao__card__imagem {
-    max-width: 100%;
+    width: 21rem;
 }
 
 .integrantes__secao__card__rm {
@@ -1756,7 +1756,7 @@ main {
 
     justify-content: space-around;
     align-items: center;
-
+    color: var(--cor-roxo); 
     padding: 3rem 1.5rem;
     gap: 2rem;
 }
@@ -1767,7 +1767,6 @@ main {
     font-family: "Quantico", sans-serif;
     font-size: 2rem;
     text-align: center;
-
     padding-bottom: 3rem;
     cursor: pointer;
     
@@ -1782,7 +1781,7 @@ main {
     display: block;
     font-family: "Questrial", sans-serif;
     font-size: 1.6rem;
-
+    color: var(--cor-branco); 
     line-height: 150%;
     text-align: center;
 }
