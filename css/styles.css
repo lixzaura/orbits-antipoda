@@ -1129,6 +1129,7 @@ main {
 
     /* MODAL */
     .score__ranking__modals-container{
+        display: block;
         position: relative;
     }
     .score__ranking__modal{
