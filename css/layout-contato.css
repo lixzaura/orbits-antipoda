@@ -6,6 +6,7 @@
     padding: 8rem 2rem;
     padding-bottom: 6.6rem;
 }
+
 .contato .pagina__titulo{
     max-width: 26.2rem;
 }
@@ -35,10 +36,10 @@
     gap: 1rem;
 }
 
-.contato__formulario__label{
+.contato__formulario__label{  
     width: 100%;
 }
-.contato__formulario__input{
+.contato__formulario__input{ 
     width: 100%;
     padding: 1rem;
 }
@@ -50,7 +51,7 @@
     height: 15.67rem;
 }
 
-.contato__formulario__botao{
+.contato__formulario__botao{  
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -58,7 +59,7 @@
     height: 5.2rem;
 }
 
-.contato__status{
+.contato__status{  
     margin-top: 2rem;
 }
 
