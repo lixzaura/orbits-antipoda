@@ -889,6 +889,7 @@ main {
 }
 
 .score__ranking__mobile__caixa {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -955,6 +956,28 @@ main {
     color: var(--cor-branco);
     width: 18.7rem;
     text-align: center;
+}
+/* MODAL */
+.score__ranking__mobile__modal{
+    position: absolute;
+    bottom: 101%;
+    width: 25rem;
+    display: block;
+}
+
+.score__ranking__mobile__modal.inativo{
+    display: none;
+}
+
+.score__ranking__mobile__modals-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100rem;
+}
+
+.score__ranking__modals-container{
+    display: none;
 }
 
 @media (min-width: 768px) {
@@ -1101,6 +1124,23 @@ main {
 
     .score__ranking__tabela__body__status {
         color: var(--cor-branco);
+    }
+
+    /* MODAL */
+    .score__ranking__modals-container{
+        position: relative;
+    }
+    .score__ranking__modal{
+        display: block;
+        width: 40rem;
+        position: absolute;
+        bottom: 15rem;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+
+    .score__ranking__modal.inativo{
+        display: none;
     }
 }
 
