@@ -117,28 +117,6 @@ Foram utilizadas as linguagens de marcação e programação HTML, CSS e JavaScr
 ![alt text](/prints/image-4.png)
 
 ===================================================
-## Autores e créditos:
-Enzo Zeni - 1TDSPK - RM570653
-  - Linkedin: https://www.linkedin.com/in/enzo-fachinelli-zeni-687a873b3
-  - Github: https://github.com/F-Zeni
-
-Jacqueline Lotufo - 1TDSPK - RM571390
-  - Linkedin: https://br.linkedin.com/in/jacqueline-lotufo
-  - Github: https://github.com/jacquelot
-
-Julia de Freitas - 1TDSPK - RM569098
-  - Linkedin: https://www.linkedin.com/in/lixzaura
-  - Github: https://github.com/lixzaura
-
-Paulo Henrique - 1TDSPK - RM573806
-  - Linkedin: https://www.linkedin.com/in/paulo-henrique-gomes-gonçalves-aa04b5272/
-  - Github: https://github.com/paulo-henrique253
-
-Victoria Peixoto - 1TDSPK - RM570997
-  - Linkedin: https://www.linkedin.com/in/victoria-peixoto-paltrinieri-9938a7404/
-  - Github: https://github.com/VictoriaPPeixoto
-
-===================================================
 
 ## Imagens e representação do projeto
 
@@ -225,6 +203,29 @@ Victoria Peixoto - 1TDSPK - RM570997
 
 ## Link do repositório
 - https://github.com/lixzaura/orbits-antipoda
+
+===================================================
+
+## Autores e créditos:
+Enzo Zeni - 1TDSPK - RM570653
+  - Linkedin: https://www.linkedin.com/in/enzo-fachinelli-zeni-687a873b3
+  - Github: https://github.com/F-Zeni
+
+Jacqueline Lotufo - 1TDSPK - RM571390
+  - Linkedin: https://br.linkedin.com/in/jacqueline-lotufo
+  - Github: https://github.com/jacquelot
+
+Julia de Freitas - 1TDSPK - RM569098
+  - Linkedin: https://www.linkedin.com/in/lixzaura
+  - Github: https://github.com/lixzaura
+
+Paulo Henrique - 1TDSPK - RM573806
+  - Linkedin: https://www.linkedin.com/in/paulo-henrique-gomes-gonçalves-aa04b5272/
+  - Github: https://github.com/paulo-henrique253
+
+Victoria Peixoto - 1TDSPK - RM570997
+  - Linkedin: https://www.linkedin.com/in/victoria-peixoto-paltrinieri-9938a7404/
+  - Github: https://github.com/VictoriaPPeixoto
 
 ===================================================
 
