@@ -1656,6 +1656,7 @@ main {
 }
 
 .contato__modal {
+    background: var(--grad-linear-horizontal-roxo), var(--cor-preto);
     position: relative;
 
     flex-direction: column;
@@ -1699,4 +1700,8 @@ main {
 
 .contato__modal__fechar:hover {
     color: var(--cor-roxo);
+}
+.contato__formulario__botao:hover {
+    background-color: var(--cor-roxo);
+    transform: scale(1.05);
 }
