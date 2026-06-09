@@ -28,21 +28,33 @@ form.addEventListener("submit", function (e) {
 
     if (name === "") {
         status.textContent = "Status: Preencha seu nome!";
+        status.scrollIntoView({
+            behavior: 'smooth'
+        });
         return;
     }
 
     if (mail === "") {
         status.textContent = "Status: Preencha seu e-mail!";
+        status.scrollIntoView({
+            behavior: 'smooth'
+        });
         return;
     }
 
     if (phone === "") {
         status.textContent = "Status: Preencha seu telefone!";
+        status.scrollIntoView({
+            behavior: 'smooth'
+        });
         return;
     }
 
     if (message === "") {
         status.textContent = "Status: Preencha sua mensagem!";
+        status.scrollIntoView({
+            behavior: 'smooth'
+        });
         return;
     }
 

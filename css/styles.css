@@ -1016,6 +1016,7 @@ main {
 
     .score__tipos__reputacao__conteudo, 
     .score__tipos__sustentabilidade__conteudo {
+        flex-wrap: nowrap;
         gap: 1.5rem;
     }
 
