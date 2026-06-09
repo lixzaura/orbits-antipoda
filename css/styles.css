@@ -59,7 +59,7 @@ main {
 
     margin-bottom: 1.9rem;
 
-    line-height: 120%;
+    line-height: 100%;
 }
 
 .pagina__titulo--destaque {
@@ -125,6 +125,7 @@ main {
     }
 
     .pagina__texto {
+        margin-top: 3rem;
         font-size: 1.5rem;
 
     }
@@ -1327,7 +1328,7 @@ main {
     width: 23rem;
     height: 4rem;
 
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     padding: 1.3rem 2.3rem;
@@ -1424,7 +1425,7 @@ main {
     width: 14rem;
     font-weight: bold;
 
-    display: flex;
+    display: none;
     justify-content: center;
 
     padding: 0.9rem 3.1rem;
@@ -1435,86 +1436,6 @@ main {
     transform: scale(1.05);
 }
 
-
-/*Modal*/
-
-.comunidade__iniciativas__modal{
-    display: flex;
-    flex-direction: column;
-    background: 
-        var(--grad-linear-vertical-roxo),
-        var(--cor-preto);
-    min-height: 15rem;
-    width: 20rem;
-    align-self: center;
-    align-items: center;
-
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.comunidade__iniciativas__modal.inativo{
-    display: none;
-}
-.comunidade__iniciativas__modal__formulario{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 2rem;
-}
-.comunidade__iniciativas__formulario__label {
-    font-family: "Quantico", sans-serif;
-    font-size: 1.8rem;
-    color: var(--cor-branco);
-    font-weight: bold;
-}
-
-.comunidade__iniciativas__formulario__input {
-    margin-top: 1rem;
-    width: 90%;
-    font-family: "Questrial", sans-serif;
-    color: var(--cor-transparente);
-    background-color: rgba(0, 0, 0, 0);
-    font-size: 1.3rem;
-}
-.comunidade__iniciativas__modal__fechar{
-    position: relative;
-    color: var(--cor-roxo);
-    left: 46%;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-.comunidade__iniciativas__formulario__botao {
-    width: 10rem;
-    font-family: "Quantico", sans-serif;
-    font-size: 2.2rem;
-    border: none;
-    border-radius: 1rem;
-    background-color: var(--cor-roxo);
-    color: var(--cor-branco);
-    font-weight: bold;
-    margin-bottom: 2rem;
-}
-.comunidade__iniciativas__modal__status{
-    display: block;
-    position: fixed;
-    bottom: 105%;
-    background-color: var(--cor-roxo);
-    border-radius: 1rem;
-
-    color: var(--cor-branco);
-    font-family: "Quantico", sans-serif;
-    font-size: 2.2rem;
-    padding: 1rem;
-}
-.comunidade__iniciativas__modal__status.inativo{
-    display: none;
-}
 @media (min-width: 768px) {
 
     .comunidade__apresentacao {
@@ -1604,64 +1525,6 @@ main {
     }
     .comunidade__iniciativas__iniciativa__caixa__texto{
         height: 7.24rem;
-    }
-
-    /*modal*/
-    
-    .comunidade__iniciativas__modal{
-        min-height: 30rem;
-        width: 40rem;
-        display: flex;
-
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .comunidade__iniciativas__modal__formulario{
-        height: 100%;
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .comunidade__iniciativas__formulario__label {
-        font-family: "Quantico", sans-serif;
-        font-size: 2.5rem;
-        color: var(--cor-branco);
-        font-weight: bold;
-    }
-
-    .comunidade__iniciativas__formulario__input {
-        margin-top: 2rem;
-        width: 90%;
-        font-family: "Questrial", sans-serif;
-        color: var(--cor-transparente);
-        padding: .7rem;
-        font-size: 2rem;
-    }
-    .comunidade__iniciativas__modal__fechar{
-        position: relative;
-        color: var(--cor-roxo);
-        left: 45%;
-        top: 5%;
-        font-size: 2.5rem;
-        cursor: pointer;
-    }
-
-    .comunidade__iniciativas__formulario__botao {
-        width: 20rem;
-        font-family: "Quantico", sans-serif;
-        font-size: 3rem;
-        border: none;
-        border-radius: 1rem;
-        background-color: var(--cor-roxo);
-        color: var(--cor-branco);
-        font-weight: bold;
-
-        padding: 1rem;
     }
 
 }
