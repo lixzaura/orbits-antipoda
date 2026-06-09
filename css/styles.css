@@ -1656,6 +1656,7 @@ main {
 }
 
 .contato__modal {
+    background: var(--grad-linear-horizontal-roxo), var(--cor-preto);
     position: relative;
 
     flex-direction: column;
