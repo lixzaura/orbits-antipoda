@@ -90,9 +90,12 @@ Foram utilizadas as linguagens de marcação e programação HTML, CSS e JavaScr
 ![alt text](/prints/image.png)
 
 - A folha de estilo **CSS** foi salva na pasta `css`
-  - `style.css`: arquivo contendo toda a estilização e organização visual do projeto.
+  - `layout-contato.css`: arquivo contendo o layout da página contato.
+  - `layout-faq.css`: arquivo contendo o layout da página de FAQ.
+  - `layout-integrantes.css`: arquivo contendo o layout da página de integrantes.
+  - `style.css`: arquivo contendo a estilização do projeto.
 
-![alt text](/prints/image-1.png)
+![alt text](/prints/css.png)
 
 - Os arquivos em **JavaScript** foram salvos na pasta `js`
   - `contato.js`: script do formulário de contato e do modal de confirmação;
