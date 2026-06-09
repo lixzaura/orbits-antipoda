@@ -1701,3 +1701,7 @@ main {
 .contato__modal__fechar:hover {
     color: var(--cor-roxo);
 }
+.contato__formulario__botao:hover {
+    background-color: var(--cor-roxo);
+    transform: scale(1.05);
+}
