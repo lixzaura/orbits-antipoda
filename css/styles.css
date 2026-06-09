@@ -45,7 +45,7 @@ main {
 
 .linha-horizontal {
     border: none;
-    border-top: 2px solid var(--cor-branco); 
+    border-top: .15rem solid var(--cor-branco); 
     width: 80%;
 
     margin-top: -2rem;
@@ -197,6 +197,7 @@ main {
 .header__logo {
     width: 100%;
     max-width: 12.5rem; /*tamanho mobile*/ 
+    padding: 2rem;
 }
 
 .header__menu.inativo,
@@ -238,7 +239,7 @@ main {
 /*Responsividade: Header & footer*/
 @media(min-width: 768px){
     main {
-        padding-top: 0;
+        padding-top: 5rem;
     }
 
     .header {
@@ -246,15 +247,15 @@ main {
         flex-direction: row;
         justify-content: space-between;
         align-items: center; 
-        padding: 2.3rem;
+        padding: .5rem 2.3rem;
+        background: var(--cor-preto);
 
-        position: relative;
-        background: #00000000; 
     }
 
     .header__logo {
-        margin-top: -2rem;
-        max-width: 18.1rem;
+        padding: 0rem;
+        margin-top: 0rem;
+        max-width: 6rem;
     }
 
     .header__button{
@@ -471,6 +472,7 @@ main {
     .inicio__apresentacao__conteudo {
         grid-column: 1/2;
         grid-row: 1/2;
+        width: 40.3rem;
     }
 
     .inicio__apresentacao__botoes {
@@ -530,7 +532,7 @@ main {
 
     .inicio__pilares__conteudo__caixa {
         width: 31.6rem;
-        padding: 2.4rem 3rem;
+        padding: 2.4rem 0rem;
     }
 
     .inicio__pilares__conteudo__caixa__imagem {
@@ -542,7 +544,12 @@ main {
     }
 
     .inicio__pilares__conteudo__caixa__texto {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        width: 100%;
+        max-width: 22rem;
+    }
+    .inicio__pilares__conteudo__caixa:nth-child(4) .inicio__pilares__conteudo__caixa__texto{
+        max-width: 19.5rem;
     }
 }
 
@@ -927,7 +934,7 @@ main {
     flex-direction: column;
     align-items: center;
     padding-top: 2.7rem;
-    border-top: 2px solid var(--cor-branco);
+    border-top: .15rem solid var(--cor-branco);
 }
 
 .score__ranking__mobile__caixa__conteudo.inativo{
@@ -1180,7 +1187,7 @@ main {
     padding: 1rem;
     border-radius: 1rem;
     background: var(--grad-linear-horizontal-roxo);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: .09rem solid rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(10px);
     margin-bottom: 1.9rem;
 }
@@ -1192,7 +1199,7 @@ main {
     padding: 1rem;
     background: var(--grad-linear-horizontal-roxo);
     border-radius: 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: .09rem solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
 }
 .comunidade__tag{
