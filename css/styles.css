@@ -1016,6 +1016,7 @@ main {
 
     .score__tipos__reputacao__conteudo, 
     .score__tipos__sustentabilidade__conteudo {
+        flex-wrap: nowrap;
         gap: 1.5rem;
     }
 
@@ -1129,6 +1130,7 @@ main {
 
     /* MODAL */
     .score__ranking__modals-container{
+        display: block;
         position: relative;
     }
     .score__ranking__modal{

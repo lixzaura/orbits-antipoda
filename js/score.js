@@ -41,7 +41,7 @@ logos.forEach((logo, indice) =>{
         const logoModal = modals[indice];
 
         logo.addEventListener("click", (e) =>{
-
+            
             modals.forEach(modal =>{
 
                 if (modal === logoModal){
@@ -49,8 +49,15 @@ logos.forEach((logo, indice) =>{
                 }
                 else{
                     modal.classList.add("inativo")
+                    
                 }
             })
+
+            logoModal.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+
             e.stopPropagation();
 
         });
