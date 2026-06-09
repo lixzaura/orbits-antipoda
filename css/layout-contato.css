@@ -1,3 +1,5 @@
+
+
 .contato{
     display: flex;
     flex-direction: column;
@@ -15,10 +17,10 @@
 }
 .contato__secao{
     padding-top: 2rem;
-    width: 100%;
+    max-width: 100%;
 }
 .contato__formulario{
-    width: 100%;
+    max-width: 25rem;
     display: flex;
     flex-direction: column;
 
@@ -51,6 +53,7 @@
 }
 
 .contato__formulario__botao{
+    margin-top: 3rem;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -59,7 +62,10 @@
 }
 
 .contato__status{
-    margin-top: 2rem;
+    max-width: 100%;
+    align-content: center;
+    bottom: 8rem;
+    position: relative;
 }
 
 @media (min-width: 768px) {
@@ -100,7 +106,7 @@
         height: 10.5rem;
     }
     .contato__status{
-        margin-left: 26.25rem;
+        text-align: center;
     }
 
     .contato__formulario__botao{
