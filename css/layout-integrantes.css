@@ -2,7 +2,7 @@
     display: none;
 }
 
-.integrantes{
+.integrantes {
     display: flex;
     flex-direction: column;
 
@@ -10,6 +10,7 @@
     align-items: center;
     gap: 3rem;
 }
+
 .integrantes__secao{
     display: flex;
     flex-direction: column;
@@ -32,6 +33,7 @@
     padding: 0.8rem;
     gap: 0.67rem;
 }
+
 .integrantes__secao__card__titulo{
     font-size: 1rem;
 }
@@ -39,7 +41,8 @@
 .integrantes__secao__card__imagem{
     max-width: 100%;
 }
-.integrantes__secao__card__rm{
+
+.integrantes__secao__card__rm {
     font-size: .84rem;
     max-width: 4.6rem;
 }
@@ -61,6 +64,7 @@
     width: 2rem;
     height: 2rem;
 }
+
 @media (min-width: 768px){
     .integrantes__secao{
         flex-direction: row;
