@@ -5,6 +5,7 @@
     align-items: center;
 }
 .faq .pagina__titulo{
+    padding-top: 1rem;
     text-align: center;
 }
 
@@ -59,6 +60,7 @@
 @media (min-width: 768px){
 
     .faq .pagina__titulo{
+        margin-top: 3rem;
         margin-bottom: 5rem;
     }
 
