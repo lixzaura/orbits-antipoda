@@ -1097,6 +1097,7 @@ main {
     }
 
     .score__ranking__tabela__body__empresa {    
+        cursor: pointer;
         color: var(--cor-branco);
         display: flex;
         align-items: center;
