@@ -63,3 +63,21 @@ form.addEventListener("submit", function (e) {
 
     modal.classList.add("ativo"); //modal
 });
+
+
+
+
+
+
+// BOT da ORBITS
+window.watsonAssistantChatOptions = {
+    integrationID: "8377833c-29a5-4824-8f62-7d129ea0a3a9", // The ID of this integration.
+    region: "https://integrations.us-south.assistant.watson.appdomain.cloud/", // The region your integration is hosted in.
+    serviceInstanceID: "92791a88-3361-4e64-ad2b-a47db5db7877", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+};
+setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+});
