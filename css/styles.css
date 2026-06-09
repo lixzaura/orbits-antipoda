@@ -1066,7 +1066,7 @@ main {
         display: grid;
         grid-template-columns: repeat(5, 16rem);
         align-items: center;
-        justify-items: start;
+        justify-items: center;
     }
 
     .score__ranking__tabela__body__linha {
@@ -1074,15 +1074,18 @@ main {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         align-items: center;
-        justify-items: start;
+        justify-items: center;
+        text-align: center;
     }
-
+    
     .score__ranking__tabela__head__linha__item {
         font-family: "Quantico", sans-serif;
         color: var(--cor-branco);
         font-size: 2.25rem;
         
     }
+
+    
 
     .score__ranking__tabela__body__posicao.pagina__titulo--destaque {
         color: var(--cor-roxo);
@@ -1101,6 +1104,8 @@ main {
         color: var(--cor-branco);
         display: flex;
         align-items: center;
+        justify-self: start;
+        text-align: start;
     }
 
     .score__ranking__tabela__body__empresa__logo {
