@@ -355,11 +355,13 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.8rem;
+    gap: 0rem;
 
     text-decoration: none;
 }
-
+.inicio__apresentacao__botoes__botao .pagina__setinha{
+    display: none;
+}
 .inicio__apresentacao__botoes__botao--destaque {
     background: var(--grad-linear-horizontal-roxo);
 }
